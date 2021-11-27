@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="Sushant Sejwal">
+    <meta name="description" content="Boolean Logic is a form of algebra which is centered around three simple words known as Boolean Operators: 'OR', 'AND', and 'NOT'. At the heart of Boolean Logic is the idea that all values are either true or false.">
+    <title>Boolean Logic - Sushant</title>
+    <link rel="stylesheet" href="css/boolean-navigation.css">
+    <link rel="stylesheet" href="css/bolean.css" preload>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="preload" href="css/bolean.css" as="style" />
+    <link rel="preload" href="css/font.css" as="style" />
+
+    <link rel="shortcut icon" href="images/SushantBlack.svg" type="image/x-icon">
+    <link rel="icon" href="images/SushantBlack.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/SushantBlack.svg">
+    <link rel="mask-icon" href="images/SushantBlack.svg">
+    <link rel="canonical" href="https://sushantsejwal.github.io/BooleanLogic/">
+    <link rel="alternate" href="https://sushantsejwal.github.io/sushant/BooleanLogic/" hreflang="en-US">
+
+</head>
+<body>
+
+    <header class="hdr" id="hdr">
+        <nav class="navigation-bar" id="navigation-bar">
+
+            <!-- Toggle button -->
+            <div class="toggle-btn">
+                <span class="toggle-btn-line toggle-btn-line-1"></span>
+                <span class="toggle-btn-line toggle-btn-line-2"></span>
+            </div>
+            <!-- Toggle button -->
+
+            <div class="nav-all-items">
+                <ul class="nav-items">
+                    <div class="main-item-div">
+                        <li class="main-item list"><a class="main-item-a main-item-a-svg-container" href="https://sushantsejwal.github.io/"><svg class="main-item-a-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="648.000000pt" height="639.000000pt" viewBox="0 0 648.000000 639.000000" preserveAspectRatio="xMidYMid meet"><metadata> Sushant</metadata><g class="main-logo-svg-g" transform="translate(0.000000,639.000000) scale(0.100000,-0.100000)" fill="#d6d6d6" stroke="none"><path d="M3027 5054 c-5 -6 -99 -42 -142 -55 -16 -5 -39 -13 -50 -18 -11 -5 -47 -19 -80 -30 -33 -11 -85 -30 -115 -41 -30 -12 -68 -26 -85 -31 -16 -5 -39 -13 -50 -18 -105 -48 -184 -54 -369 -31 -105 13 -357 13 -465 -1 -147 -18 -316 -56 -374 -85 -16 -8 -33 -14 -38 -14 -10 0 -143 -63 -174 -83 -54 -34 -175 -130 -211 -168 -68 -71 -131 -165 -179 -264 -25 -52 -45 -99 -45 -105 0 -7 -6 -33 -14 -59 -37 -118 -44 -268 -21 -421 22 -143 39 -189 121 -343 25 -46 177 -190 255 -243 99 -65 90 -61 284 -159 188 -95 191 -97 253 -142 82 -60 112 -116 112 -208 0 -109 -52 -180 -161 -219 -69 -25 -320 -25 -418 -1 -101 25 -172 46 -211 63 -19 8 -51 21 -70 29 -19 9 -42 19 -50 24 -8 4 -37 20 -65 34 -58 31 -70 38 -148 88 -61 40 -77 41 -77 1 0 -13 -6 -50 -14 -82 -8 -31 -22 -93 -31 -137 -10 -44 -23 -107 -30 -140 -7 -33 -21 -96 -30 -140 -9 -44 -21 -100 -27 -125 -25 -103 -25 -103 34 -132 119 -58 249 -105 393 -141 162 -41 220 -49 444 -66 148 -11 454 9 576 39 289 69 458 151 602 291 70 68 153 170 153 188 0 17 27 13 34 -5 4 -10 13 -67 21 -128 14 -106 18 -136 46 -319 7 -44 17 -81 24 -83 12 -5 113 26 215 66 30 12 66 25 80 30 14 5 70 26 125 47 l100 38 320 5 320 5 65 128 c63 123 99 167 138 167 8 0 28 6 45 14 18 8 59 23 92 35 33 11 85 30 115 41 30 12 71 26 90 32 19 6 40 13 45 16 6 4 37 16 70 27 60 21 60 21 63 63 3 34 8 43 25 47 12 3 126 4 252 3 l230 -3 3 -45 c1 -25 7 -83 13 -130 5 -47 14 -151 19 -232 4 -81 11 -152 15 -158 7 -12 933 -14 952 -2 9 5 9 19 3 47 -5 22 -10 60 -10 85 0 25 -6 92 -14 150 -18 129 -36 277 -46 390 -4 47 -12 123 -18 170 -6 47 -18 146 -26 220 -9 74 -20 176 -26 225 -7 50 -14 113 -16 140 -2 28 -11 106 -19 175 -8 69 -21 188 -30 265 -8 77 -20 176 -26 220 -6 44 -14 127 -19 185 -5 58 -14 129 -20 159 -5 29 -10 72 -10 95 0 22 -6 88 -15 146 -20 145 -38 301 -44 390 l-6 75 -591 3 -592 2 -28 -52 c-15 -29 -34 -64 -42 -78 -29 -51 -78 -140 -103 -187 -15 -26 -36 -64 -47 -83 -12 -19 -33 -57 -47 -85 -14 -27 -35 -66 -47 -85 -11 -19 -32 -57 -47 -83 -14 -26 -39 -72 -56 -102 -16 -29 -42 -75 -56 -102 -15 -26 -36 -64 -47 -83 -12 -19 -33 -57 -47 -85 -14 -27 -35 -66 -47 -85 -11 -19 -32 -57 -47 -83 -14 -26 -39 -72 -56 -102 -16 -29 -42 -75 -56 -102 -15 -26 -36 -64 -47 -83 -12 -19 -33 -57 -47 -85 -14 -27 -35 -66 -47 -85 -11 -19 -32 -57 -47 -83 -14 -26 -40 -74 -58 -105 -17 -31 -44 -80 -59 -109 -24 -44 -50 -71 -59 -61 -2 2 -10 62 -20 133 -9 72 -24 173 -31 225 -8 52 -19 127 -24 165 -5 39 -19 133 -30 210 -12 77 -25 174 -30 215 -4 41 -11 86 -14 100 -7 28 -33 216 -46 325 -5 39 -18 133 -30 210 -12 77 -25 172 -30 210 -9 71 -48 349 -49 351 -3 6 -30 12 -34 8z m1913 -1107 c0 -128 7 -313 15 -412 8 -99 15 -242 15 -318 l0 -137 -272 2 c-318 3 -293 -12 -222 135 24 51 64 135 88 185 43 91 93 196 180 380 59 124 89 192 116 258 12 30 28 69 35 85 8 17 16 38 19 48 3 10 10 15 16 12 6 -4 10 -93 10 -238z m-2742 164 l67 -17 12 -80 c7 -43 16 -113 22 -154 5 -41 19 -140 31 -220 11 -80 25 -177 30 -215 5 -39 12 -83 15 -98 10 -39 -21 -36 -71 6 -44 37 -132 100 -154 110 -8 4 -28 16 -45 26 -16 11 -50 31 -75 44 -25 14 -61 34 -80 46 -19 11 -44 25 -55 30 -11 5 -37 21 -58 35 -21 14 -40 26 -43 26 -3 0 -28 18 -57 40 -90 68 -127 131 -127 220 0 46 5 69 24 98 42 67 116 111 206 123 81 10 282 -1 358 -20z"/></g></svg></a></li>
+                    </div>
+                    <div class="all-other-items">
+                        <li class="other-items list"><a class="link_1 link" href="https://sushantsejwal.github.io/NumberSystem/">Number System</a></li>
+                        <li class="other-items list"><a class="link_2 link" href="https://sushantsejwal.github.io/BooleanLogic/">Boolean Logic</a></li>
+                        <li class="other-items list"><a class="link_3 link" href="https://sushantsejwal.github.io/Python/">Python</a></li>
+                        <li class="other-items list"><a class="link_4 link" href="https://sushantsejwal.github.io/Steve/">Steve</a></li>
+                    </div>
+                    <div class="bullet" id="bullet">
+                        <li class="bullet-list" id="bullet-list">
+                            <svg viewBox="235.787 199.515 68.489 36.868" xmlns="http://www.w3.org/2000/svg" class="bullet-svg" id="bullet-svg"><g class="bullet-svg-g" id="bullet-svg-g" transform="matrix(1, 0, 0, 1, 272.397095, 47.503841)" fill="#d6d6d6" stroke="none"><path d="m -36.609709,152.08162 c 0.102799,12.41672 12.212214,10.58334 21.166666,10.58334 l -1.058333,25.75277 h 11.2888887 v -10.93611 c 3.928533,1.91453 5.48957504,7.233 9.18598,9.61284 4.236862,2.72768 14.7644563,2.41336 18.2107423,-1.5307 2.0193,-2.31105 2.234847,-5.51074 2.236611,-8.43492 -5.512505,0.74225 -13.964003,2.73227 -17.6388893,-2.46944 8.1008363,-3.91548 6.4678283,-17.37106 -1.072091,-20.90889 -4.82776396,-2.26505 -10.316281,-1.66889 -15.508464,-1.66889 H -36.609709 m 44.4499997,0 v 0.35278 c 3.4434643,2.62361 5.7636833,5.88095 6.3500003,10.23056 6.23323,0 15.290449,1.4104 17.425109,-6.35 0.39087,-1.42053 0.23989,-2.78226 0.21378,-4.23334 H 7.8402907 m -13.052778,16.93334 v -7.40834 c 1.733903,0.01 3.7846,-0.14114 5.25356704,0.95391 2.16005796,1.61008 1.65593796,4.8193 -0.672748,5.98946 -1.36419104,0.68545 -3.10197504,0.46497 -4.58081904,0.46497 m -27.1638887,-4.93889 c 0,1.72473 -0.203412,3.60115 0.186725,5.29166 1.582138,6.85589 8.859132,5.99723 14.277164,5.99723 v -10.58334 c -4.675858,0 -9.973839,0.7179 -14.463889,-0.70555 m 59.972222,0 -8.819444,0.70555 -4.020609,0.36266 -0.9779,3.5179 -3.468158,6.70278 c 6.425847,0 17.962385,1.60055 17.727435,-8.11389 -0.0261,-1.0788 -0.0261,-2.18546 -0.441324,-3.175 m -56.091666,13.05277 c 0,4.50639 0.35888,8.36578 4.938888,10.48668 1.096681,0.508 3.211972,1.29504 4.32943,0.4385 1.959963,-1.50248 1.666311,-7.96184 1.667793,-10.21962 z" id="path111"/></g></svg>
+                        </li>
+                    </div>
+                    <div class="bullet-audio-container" id="bullet-audio-container">
+                        <audio src="images/audio/RE.mp3" class="bullet-audio"  id="bullet-audio"></audio>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="boolean-section" id="boolean-section">
+        <!-- boolean section heading -->
+        <div class="booelan-section-heading" id="booelan-section-heading">
+            <div class="booelan-section-heading-text" id="booelan-section-heading-text">
+                <h1 class="booelan-section-heading-text-h1" id="booelan-section-heading-text-h1">Boolean Logic</h1>
+            </div>
+            <div class="booelan-section-heading-image" id="booelan-section-heading-image">
+                <img src="images/boolean logic/boolean-logic.gif" alt="Logic Operators" class="booelan-section-heading-img" id="booelan-section-heading-img">
+            </div>
+        </div>
+        <!-- Boolean logic terms -->
+        <div class="boolean-logic-terms" id="boolean-logic-terms">
+            <!-- Boolean Variable -->
+            <div class="boolean-variable" id="boolean-variable">
+                <div class="boolean-variable-heading" id="boolean-variable-heading">
+                    <h1 class="boolean-variable-heading-h1" id="boolean-variable-heading-h1">Boolean Variables</h1>
+                </div>
+                <div class="boolean-variable-text" id="boolean-variable-text">
+                    <p class="boolean-variable-text-p" id="boolean-variable-text-p"><b>Boolean Variable</b> holds false/true values. A Boolean variable is also known as binary variable or logical variable that takes its values from Boolean Algebra. A Boolean variable can take only one binary-valued quantity out of the two possible values. In other words, yes/no 1/0 true/false. One bit represent one Boolean variable. In electric circuit if electricity passes it represent 1, else it is represented through 0.</p> 
+                </div>
+            </div>
+            <div class="boolean-constant" id="boolean-constant">
+                <div class="boolean-constant-heading" id="boolean-constant-heading">
+                    <h1 class="boolean-constant-heading-h1" id="boolean-constant-heading-h1">Boolean Constant</h1>
+                </div>
+                <div class="boolean-constant-text" id="boolean-constant-text">
+                    <p class="boolean-constant-text-p" id="boolean-constant-text-p">The values which are stored in Boolean variables are also known as <b>Boolean Constants</b>. Therefore, the values <b>yes/no</b>, <b>1/0</b> or <b>true/false</b> are Boolean constants.</p>
+                    <p class="boolean-statement-text-p" id="boolean-statement-text-p"><b>Boolean Statement: </b> A Statement is said to be a Booelan/Logical statement if it's output result is either false or true. </p>
+                    <p class="boolean-expression-text-p" id="boolean-expression-text-p"><b>Boolean Expression: </b> A meaningful combination of Boolean Operators.</p>
+                </div>
+            </div>
+        </div>
+        <!-- boolean operator -->
+        <div class="boolean-operators" id="boolean-operators">
+            <div class="boolean-operators-head">
+                <div class="boolean-operators-heading" id="boolean-operators-heading">
+                    <h1 class="boolean-operators-heading-h1" id="boolean-operators-heading-h1">Boolean Operators</h1>
+                </div>
+                <div class="boolean-operators-define" id="boolean-operators-define">
+                    <p class="boolean-operators-define-p" id="boolean-operators-define-p">Operators used in Boolean alegbra are known as Boolean/Logical Operators</p>
+                </div>
+            </div>
+            <!-- type of operators -->
+            <div class="type-of-boolean-operators" id="type-of-boolean-operators">
+                <!-- AND operator -->
+                <div class="AND-operator" id="AND-operator">
+                    <div class="AND-operator-heading" id="AND-operator-heading">
+                        <h1 class="AND-operator-heading-h1" id="AND-operator-heading-h1">AND Operator</h1>
+                    </div>
+                    <div class="AND-operator-define" id="ND-operator-define">
+                        <div class="AND-operator-define-text" id="AND-operator-define-text">
+                            <p class="AND-operator-define-text-p" id="AND-operator-define-text-p"><b>AND </b> operator is a binary operator that operates on two variables and the operation performed by AND operator is known as <b>logical multiplication</b>. The symbol used for logical multiplication is <b>dot(.)</b> </p>
+                        </div>
+                        <div class="AND-operator-define-example" id="AND-operator-define-example">
+                            <div class="AND-operator-define-example-text" id="AND-operator-define-example-text">
+                                <p class="AND-operator-define-example-text-p" id="AND-operator-define-example-text-p"><b>Example. </b> below the output of logical multiplication of two variables is given</p>
+                            </div>
+                            <div class="AND-operator-define-example-table" id="AND-operator-define-example-table">
+                                <table class="AND-operator-table" id="AND-operator-table">
+                                    <thead class="AND-operator-table-head" id="AND-operator-table-head">
+                                        <tr class="AND-operator-table-head-tr" id="AND-operator-table-head-tr">
+                                            <td class="AND-operator-table-head-tr-td" id="AND-operator-table-head-tr-td"><b>A</b></td>
+                                            <td class="AND-operator-table-head-tr-td" id="AND-operator-table-head-tr-td"><b>B</b></td>
+                                            <td class="AND-operator-table-head-tr-td" id="AND-operator-table-head-tr-td">Output <b>A.B</b></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="AND-operator-table-body" id="AND-operator-table-body">
+                                        <tr class="AND-operator-table-body-tr" id="AND-operator-table-body-tr">
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                        </tr>
+                                        <tr class="AND-operator-table-body-tr" id="AND-operator-table-body-tr">
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">1</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                        </tr>
+                                        <tr class="AND-operator-table-body-tr" id="AND-operator-table-body-tr">
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">1</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">0</td>
+                                        </tr>
+                                        <tr class="AND-operator-table-body-tr" id="AND-operator-table-body-tr">
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">1</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">1</td>
+                                            <td class="AND-operator-table-body-tr-td" id="AND-operator-table-body-tr-td">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="AND-operator-define-example-table-text" id="AND-operator-define-example-table-text">
+                                    <p class="AND-operator-define-example-table-text-p" id="AND-operator-define-example-table-text-p">The <b>AND</b> operation will result in 1 (true value) when both inputs are 1 (true/high), and for all other values it resut in 0 (false/low) </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OR operator -->
+                <div class="OR-operator" id="OR-operator">
+                    <div class="OR-operator-heading" id="OR-operator-heading">
+                        <h1 class="OR-operator-heading-h1" id="OR-operator-heading-h1">OR Operator</h1>
+                    </div>
+                    <div class="OR-operator-define" id="ND-operator-define">
+                        <div class="OR-operator-define-text" id="OR-operator-define-text">
+                            <p class="OR-operator-define-text-p" id="OR-operator-define-text-p">The <b>OR </b> operator is a binary operator that operates on two variables OR the operation performed by OR operator is known as <b>logical addition</b>. The symbol used for logical addition is <b>plus (+)</b> </p>
+                        </div>
+                        <div class="OR-operator-define-example" id="OR-operator-define-example">
+                            <div class="OR-operator-define-example-text" id="OR-operator-define-example-text">
+                                <p class="OR-operator-define-example-text-p" id="OR-operator-define-example-text-p"><b>Example. </b> below the output of logical addition of two variables is given</p>
+                            </div>
+                            <div class="OR-operator-define-example-table" id="OR-operator-define-example-table">
+                                <table class="OR-operator-table" id="OR-operator-table">
+                                    <thead class="OR-operator-table-head" id="OR-operator-table-head">
+                                        <tr class="OR-operator-table-head-tr" id="OR-operator-table-head-tr">
+                                            <td class="OR-operator-table-head-tr-td" id="OR-operator-table-head-tr-td"><b>A</b></td>
+                                            <td class="OR-operator-table-head-tr-td" id="OR-operator-table-head-tr-td"><b>B</b></td>
+                                            <td class="OR-operator-table-head-tr-td" id="OR-operator-table-head-tr-td">Output <b>A+B</b></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="OR-operator-table-body" id="OR-operator-table-body">
+                                        <tr class="OR-operator-table-body-tr" id="OR-operator-table-body-tr">
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">0</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">0</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">0</td>
+                                        </tr>
+                                        <tr class="OR-operator-table-body-tr" id="OR-operator-table-body-tr">
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">0</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                        </tr>
+                                        <tr class="OR-operator-table-body-tr" id="OR-operator-table-body-tr">
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">0</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                        </tr>
+                                        <tr class="OR-operator-table-body-tr" id="OR-operator-table-body-tr">
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                            <td class="OR-operator-table-body-tr-td" id="OR-operator-table-body-tr-td">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="OR-operator-define-example-table-text" id="OR-operator-define-example-table-text">
+                                    <p class="OR-operator-define-example-table-text-p" id="OR-operator-define-example-table-text-p">The <b>OR</b> operation will result in 1 (true value) when either one or both of the input value is 1 (true/high), and for all other input values the output will be 0 (false/low).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NOT operator -->
+                <div class="NOT-operator" id="NOT-operator">
+                    <div class="NOT-operator-heading" id="NOT-operator-heading">
+                        <h1 class="NOT-operator-heading-h1" id="NOT-operator-heading-h1">NOT Operator</h1>
+                    </div>
+                    <div class="NOT-operator-define" id="ND-operator-define">
+                        <div class="NOT-operator-define-text" id="NOT-operator-define-text">
+                            <p class="NOT-operator-define-text-p" id="NOT-operator-define-text-p">The <b>NOT </b> operator is an unary operator that operates on one variable and the operation performed by NOT operator is known as negation or complementation. The symbol of NOT operator is <b>! (exclamation mark)</b> or <b class="not-bar">(bar)</b> or <b>' (apostrophe), X'</b> or <b>~ (approximately), ~X</b></p>
+                        </div>
+                        <div class="NOT-operator-define-example" id="NOT-operator-define-example">
+                            <div class="NOT-operator-define-example-text" id="NOT-operator-define-example-text">
+                                <p class="NOT-operator-define-example-text-p" id="NOT-operator-define-example-text-p"><b>Example</b></p>
+                            </div>
+                            <div class="NOT-operator-define-example-table" id="NOT-operator-define-example-table">
+                                <table class="NOT-operator-table" id="NOT-operator-table">
+                                    <thead class="NOT-operator-table-head" id="NOT-operator-table-head">
+                                        <tr class="NOT-operator-table-head-tr" id="NOT-operator-table-head-tr">
+                                            <td class="NOT-operator-table-head-tr-td" id="NOT-operator-table-head-tr-td"><b>A</b></td>
+                                            <td class="NOT-operator-table-head-tr-td" id="NOT-operator-table-head-tr-td">Output <b>A'</b></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="NOT-operator-table-body" id="NOT-operator-table-body">
+                                        <tr class="NOT-operator-table-body-tr" id="NOT-operator-table-body-tr">
+                                            <td class="NOT-operator-table-body-tr-td" id="NOT-operator-table-body-tr-td">0</td>
+                                            <td class="NOT-operator-table-body-tr-td" id="NOT-operator-table-body-tr-td">1</td>
+                                        </tr>
+                                        <tr class="NOT-operator-table-body-tr" id="NOT-operator-table-body-tr">
+                                            <td class="NOT-operator-table-body-tr-td" id="NOT-operator-table-body-tr-td">1</td>
+                                            <td class="NOT-operator-table-body-tr-td" id="NOT-operator-table-body-tr-td">0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="NOT-operator-define-example-table-text" id="NOT-operator-define-example-table-text">
+                                    <p class="NOT-operator-define-example-table-text-p" id="NOT-operator-define-example-table-text-p">The <b>NOT</b> operation will result in 1 (true/high) if the input is 0 (false/low) and the operation will result in 0 (false/low) if the input is 1 (true/high)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Truth Table -->
+        <div class="truth-table" id="truth-table">
+            <!-- truth table heading -->
+            <div class="truth-table-heading" id="truth-table-heading">
+                <h1 class="truth-table-heading-h1" id="truth-table-heading-h1">Truth Table</h1>
+                <div class="truth-table-defination" id="truth-table-defination">
+                    <p class="truth-table-defination-p" id="truth-table-defination-p">A Truth Table is a represnatation of a Boolean Function or expression containing all possible  combinations of input values and their result in tabular format. If the result of a logical expression is 1 (true/high), it is known as <b>Tautology</b> and if the result of a logical expression is 0 (false/low), it is known as <b>Fallacy</b>. </p>
+                </div>
+            </div>
+            <div class="representation-of-combinations" id="representation-of-combinations">
+                <div class="representation-of-combinations-heading" id="representation-of-combinations-heading">
+                    <h1 class="representation-of-combinations-heading-h1" id="representation-of-combinations-heading-h1">Representation Of Truth Table</h1>
+                </div>
+                <div class="no-of-row-in-truth-table" id="no-of-row-in-truth-table">
+                    <p class="no-of-row-in-truth-table-p" id="no-of-row-in-truth-table-p">The Number of row in a truth table is calculated as 2<sup>n</sup> where n is the total number of Boolean variables. </p>
+                </div>
+                <div class="representation-of-combinations-example" id="representation-of-combinations-example">
+                    <div class="representation-of-combinations-example-two-input" id="representation-of-combinations-example-two-input">
+                        <div class="representation-of-combinations-example-two-input-text" id="representation-of-combinations-example-two-input-text">
+                            <p class="representation-of-combinations-example-two-input-p" id="representation-of-combinations-example-two-input-p">If there are two variables A and B then the total possible input values will be 4 (2<sup>2</sup> = 4)  and it can be represented as :</p>
+                        </div>
+                        <div class="representation-of-combinations-example-two-input-table" id="representation-of-combinations-example-two-input-table">
+                            <table class="representation-of-combinations-example-two-input-table-table" id="representation-of-combinations-example-two-input-table-table">
+                                <thead class="representation-of-combinations-example-two-input-table-table-thead" id="representation-of-combinations-example-two-input-table-table-thead">
+                                    <tr class="representation-of-combinations-example-two-input-table-table-thead-tr" id="representation-of-combinations-example-two-input-table-table-thead-tr"><td><b>A</b></td><td><b>B</b></td><td><b>A+B</b></td><td><b>A.B</b></td></tr>
+                                </thead>
+                                <tbody class="representation-of-combinations-example-two-input-table-table-tbody" id="representation-of-combinations-example-two-input-table-table-tbody">
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="representation-of-combinations-example-two-input" id="representation-of-combinations-example-two-input">
+                        <div class="representation-of-combinations-example-two-input-text" id="representation-of-combinations-example-two-input-text">
+                            <p class="representation-of-combinations-example-two-input-p" id="representation-of-combinations-example-two-input-p">If there are three variables A, B and C then the total possible input values will be 8 (2<sup>3</sup> = 8)  and it can be represented as :</p>
+                        </div>
+                        <div class="representation-of-combinations-example-two-input-table" id="representation-of-combinations-example-two-input-table">
+                            <table class="representation-of-combinations-example-two-input-table-table" id="representation-of-combinations-example-two-input-table-table">
+                                <thead class="representation-of-combinations-example-two-input-table-table-thead" id="representation-of-combinations-example-two-input-table-table-thead">
+                                    <tr class="representation-of-combinations-example-two-input-table-table-thead-tr" id="representation-of-combinations-example-two-input-table-table-thead-tr"><td><b>&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;</b></td><td><b>&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;</b></td><td><b>&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;</b></td></tr>
+                                </thead>
+                                <tbody class="representation-of-combinations-example-two-input-table-table-tbody" id="representation-of-combinations-example-two-input-table-table-tbody">
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>0</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>0</td><td>1</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>1</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>0</td><td>1</td><td>1</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>0</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>0</td><td>1</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>1</td><td>0</td></tr>
+                                    <tr class="representation-of-combinations-example-two-input-table-table-tbody-tr" id="representation-of-combinations-example-two-input-table-table-tbody-tr"><td>1</td><td>1</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="truth-table-example">
+                        <div class="truth-table-example-question">
+                            <p class="truth-table-example-question-p"><b>Q. Write a truth table for the Boolean expression F = A.B'+C by writing each step.</b></p>
+                        </div>
+                        <div class="truth-table-example-question-solution">
+                            <div class="truth-table-example-question-solution-step-1">
+                                <div class="truth-table-example-question-solution-step-1-text">
+                                    <p class="truth-table-example-question-solution-step-1-text-p truth-table-example-text"><b>1.</b> In the given expression, there are three variables A, B and C. Draw three columns for each possible input variable combination and three columns for each logical operation NOT, AND and OR and 2<sup>3</sup> = 8 rows such as:</p>
+                                </div>
+                                <div class="truth-table-example-question-solution-step-1-table">
+                                    <table>
+                                        <thead><tr><td><b>A</b></td><td><b>B</b></td><td><b>C</b></td><td><b>B'</b></td><td><b>A.B'</b></td><td><b>(A.B')+C</b></td></tr></thead>
+                                        <tbody>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="truth-table-example-question-solution-step-2">
+                                <div class="truth-table-example-question-solution-step-2-text">
+                                    <p class="truth-table-example-question-solution-step-2-text-p truth-table-example-text"><b>2.</b> First fill the Truth table with all input values</p>
+                                </div>
+                                <div class="truth-table-example-question-solution-step-2-table">
+                                    <table>
+                                        <thead><tr><td><b>A</b></td><td><b>B</b></td><td><b>C</b></td><td><b>B'</b></td><td><b>A.B'</b></td><td><b>(A.B')+C</b></td></tr></thead>
+                                        <tbody>
+                                            <tr><td>0</td><td>0</td><td>0</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>0</td><td>0</td><td>1</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>0</td><td>1</td><td>0</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>0</td><td>1</td><td>1</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>1</td><td>0</td><td>0</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>1</td><td>0</td><td>1</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>1</td><td>1</td><td>0</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                            <tr><td>1</td><td>1</td><td>1</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="truth-table-example-question-solution-step-3">
+                                <div class="truth-table-example-question-solution-step-3-text">
+                                    <p class="truth-table-example-question-solution-step-3-text-p truth-table-example-text"><b>3.</b> Now perform all the logical operations and write all the output value</p>
+                                </div>
+                                <div class="truth-table-example-question-solution-step-3-table">
+                                    <table>
+                                        <thead><tr><td><b>A</b></td><td><b>B</b></td><td><b>C</b></td><td><b>B'</b></td><td><b>A.B'</b></td><td><b>(A.B')+C</b></td></tr></thead>
+                                        <tbody>
+                                            <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                                            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+                                            <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                            <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+                                            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+                                            <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                                            <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                                            <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="precedence-for-solving">
+                                <div class="precedence-for-solving-operators">
+                                    <div class="precedence-for-solving-operators-heading">
+                                        <p class="precedence-for-solving-operators-heading-text">Precedence For Boolean Operators</p>
+                                    </div>
+                                    <div class="precedence-for-solving-operators-steps">
+                                        <div class="precedence-for-solving-operators-steps-1">
+                                            <p class="precedence-for-solving-operators-steps-1-text">&#10140;  NOT (First Precedence)</p>
+                                        </div>
+                                        <div class="precedence-for-solving-operators-steps-2">
+                                            <p class="precedence-for-solving-operators-steps-2-text">&#10140;  AND (Second Precedence)</p>
+                                        </div>
+                                        <div class="precedence-for-solving-operators-steps-3">
+                                            <p class="precedence-for-solving-operators-steps-3-text">&#10140;  OR (Third Precedence)</p>
+                                        </div>
+                                        <div class="precedence-for-solving-operators-steps-summary">
+                                            <p class="precedence-for-solving-operators-steps-summary-text">The NOT operator has the highest priority and OR has the lowest priorty. For evaluating the Boolean Expression, the following rules should be followed:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="precedence-for-solving-expression">
+                                    <div class="precedence-for-solving-expression-heading">
+                                        <p class="precedence-for-solving-expression-heading-text"><b>Rules for Evaluating Boolean Expression</b></p>
+                                    </div>
+                                    <div class="precedence-for-solving-expressionsteps">
+                                        <div class="precedence-for-solving-expression-steps-1">
+                                            <p class="precedence-for-solving-expression-steps-1-text">1. Evaluate the Boolean expression from left to right.</p>
+                                        </div>
+                                        <div class="precedence-for-solving-expression-steps-2">
+                                            <p class="precedence-for-solving-expression-steps-2-text">2. Evaluate the expression in parentheses first.</p>
+                                        </div>
+                                        <div class="precedence-for-solving-expression-steps-3">
+                                            <p class="precedence-for-solving-expression-steps-3-text">3. Perform all NOT expressions.</p>
+                                        </div>
+                                        <div class="precedence-for-solving-expression-steps-4">
+                                            <p class="precedence-for-solving-expression-steps-4-text">4. Perform all AND expressions.</p>
+                                        </div>
+                                        <div class="precedence-for-solving-expression-steps-5">
+                                            <p class="precedence-for-solving-expression-steps-5-text">5. Perform all OR expressions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logic gates -->
+        <div class="logic-gate">
+            <!-- heading -->
+            <div class="logic-gate-intro">
+                <div class="logic-gate-heading">
+                    <h1 class="logic-gate-heading-h1">Logic Gates</h1>
+                </div>
+                <div class="logic-gate-defination">
+                    <p class="logic-gate-defination-text">A logic gate is the one which takes one or more input and generates an output. Logic gates use the binary operators AND, OR and NOT.</p>
+                </div>
+            </div>
+            <!-- types -->
+            <div class="types-of-logic-gate">
+                <!-- AND gate -->
+                <div class="AND-gate gate-type">
+                    <div class="AND-gate-heading gate-heading">
+                        <h1 class="AND-gate-h1 gate-h1">AND Gate</h1>
+                    </div>
+                    <div class="AND-gate-explanation gate-explain">
+                        <div class="AND-gate-explanation-text gate-explain-text">
+                            <p class="AND-gate-explanation-text-p gate-explain-p">The AND gate is so named because, the gate acts in the same way as the logical AND operator. The output is 1 (true/high) when both inputs are 1 (true/high) Otherwise, the output is 0 (false/low).</p>
+                        </div>
+                        <div class="AND-gate-explanation-symbol gate-symbol">
+                            <div class="AND-gate-explanation-symbol-view-box gate-svg-conatiner">
+                                <svg viewBox="121.99 179.043 94.161 32.762" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="g-2" transform="matrix(1, 0, 0, 1, 433.000183, -356.010773)">
+                                        <path style="fill:#000000;stroke-width:1" d="m -286.78751,567.6431 c -0.097,-0.097 -0.17639,-2.00202 -0.17639,-4.23334 v -4.05694 h -6.20209 c -6.24721,0 -6.918,-0.10106 -6.22371,-0.93763 0.26291,-0.31678 1.39602,-0.38529 6.37278,-0.38529 h 6.05302 v -7.01145 -7.01146 h -6.05302 c -4.97676,0 -6.10987,-0.0685 -6.37278,-0.38529 -0.6942,-0.83646 -0.0234,-0.93763 6.21644,-0.93763 h 6.19483 l 0.0734,-3.77031 0.0734,-3.77031 8.45208,-0.0699 c 9.33624,-0.0773 9.89877,-0.007 12.97917,1.61375 2.10743,1.10904 4.77583,3.85171 6.02307,6.19073 0.99717,1.87004 2.04672,5.31832 2.04672,6.72446 v 0.74832 l 10.25261,0.0693 c 10.05313,0.0679 10.2526,0.0795 10.2526,0.59842 0,0.51887 -0.19947,0.53051 -10.2526,0.59841 l -10.25261,0.0693 v 1.10447 c 0,1.67925 -0.73684,4.35592 -1.80649,6.56223 -1.24399,2.56593 -4.21773,5.65559 -6.59131,6.84825 -2.90221,1.45827 -4.11813,1.61018 -12.9232,1.61451 -4.37776,0.002 -8.03893,-0.0755 -8.13594,-0.17248 z m 16.49236,-1.427 c 9.40733,-1.5123 14.47455,-12.86924 9.8945,-22.17607 -1.13008,-2.29634 -3.75724,-5.09006 -5.81327,-6.18181 -2.5784,-1.36913 -3.79299,-1.52415 -11.94203,-1.52415 h -7.48503 v 14.90486 c 0,8.19767 0.0794,14.98424 0.17639,15.08125 0.28647,0.28648 13.2952,0.19722 15.16944,-0.10408 z m -39.6875,-7.54953 v -5.18417 l 2.6272,0.0909 c 3.32709,0.11516 4.07684,0.54925 4.20029,2.43189 0.0678,1.03414 -0.026,1.32815 -0.5905,1.85134 l -0.6711,0.62195 0.66195,0.30161 c 1.67082,0.76127 1.49135,3.95321 -0.26732,4.75451 -0.38941,0.17743 -1.84898,0.3161 -3.32714,0.3161 h -2.63338 z m 5.53705,3.42869 c 0.67786,-0.86176 0.69862,-1.70451 0.0614,-2.49149 -0.41726,-0.5153 -0.74877,-0.60474 -2.3151,-0.62462 l -1.8281,-0.0232 -0.0777,1.91822 -0.0777,1.91823 h 1.84448 c 1.67747,0 1.89412,-0.0631 2.39284,-0.69714 z m -0.39657,-4.74571 c 0.54372,-0.54373 0.53224,-1.80402 -0.0206,-2.26285 -0.26381,-0.21894 -1.07472,-0.36255 -2.05052,-0.36313 l -1.61414,-9.6e-4 -0.0794,1.52136 -0.0793,1.52135 h 1.7141 c 1.20549,0 1.83746,-0.12337 2.12987,-0.41577 z m 71.66959,-3.1332 c -0.67547,-0.58101 -0.74236,-0.79764 -0.74236,-2.40416 0,-1.60651 0.0669,-1.82314 0.74236,-2.40415 0.87675,-0.75416 2.64642,-0.86964 3.55664,-0.23211 1.30379,0.91322 1.41538,3.82511 0.19341,5.04708 -0.88555,0.88554 -2.71659,0.88229 -3.75005,-0.007 z m 3.12785,-0.59274 c 0.20498,-0.24699 0.36312,-1.03586 0.36312,-1.81142 0,-1.65739 -0.42215,-2.24895 -1.60489,-2.24895 -1.11018,0 -1.7024,0.78236 -1.7024,2.24895 0,1.4666 0.59222,2.24896 1.7024,2.24896 0.49453,0 1.03739,-0.19127 1.24177,-0.43754 z m 3.67041,0.70213 c -0.45489,-0.4549 -0.52916,-0.88195 -0.52916,-3.04271 0,-2.05787 0.0719,-2.51354 0.39687,-2.51354 0.31719,0 0.39688,0.39496 0.39688,1.96715 0,2.7042 0.2675,3.32451 1.43365,3.32451 1.35585,0 1.74135,-0.71592 1.74135,-3.23387 0,-1.8814 0.0454,-2.05779 0.52916,-2.05779 0.49849,0 0.52917,0.17639 0.52917,3.0427 0,2.86632 -0.0307,3.04271 -0.52917,3.04271 -0.316,0 -0.52916,-0.17639 -0.52916,-0.43788 0,-0.40745 -0.0336,-0.40745 -0.48386,0 -0.67901,0.6145 -2.3,0.56444 -2.95573,-0.0913 z m 7.40834,0.33631 c -0.67607,-0.25735 -0.78552,-0.66151 -0.7897,-2.916 -0.003,-1.76209 -0.0805,-2.18281 -0.40093,-2.18281 -0.21828,0 -0.39687,-0.1786 -0.39687,-0.39688 0,-0.21828 0.17859,-0.39687 0.39687,-0.39687 0.26458,0 0.39688,-0.26459 0.39688,-0.79375 0,-0.52917 0.13229,-0.79375 0.39687,-0.79375 0.26458,0 0.39688,0.26458 0.39688,0.79375 0,0.74965 0.0588,0.79375 1.05833,0.79375 0.76435,0 1.05833,0.11024 1.05833,0.39687 0,0.28663 -0.29398,0.39688 -1.05833,0.39688 h -1.05833 v 1.83044 c 0,2.40219 0.12122,2.66747 1.21893,2.66747 0.6216,0 0.89773,0.12208 0.89773,0.39688 0,0.40457 -1.2686,0.52685 -2.11666,0.20402 z m -92.02194,-6.46679 c 0.0692,-0.1935 0.94103,-2.52471 1.93733,-5.18046 l 1.81146,-4.82865 h 0.81977 0.81977 l 1.81705,4.82865 c 0.99938,2.65575 1.87504,4.98696 1.94591,5.18046 0.0922,0.25165 -0.0854,0.32698 -0.62356,0.26458 -0.64147,-0.0744 -0.80976,-0.27257 -1.14119,-1.344 l -0.38876,-1.25677 h -2.42064 -2.42063 l -0.38876,1.25677 c -0.33143,1.07143 -0.49972,1.26964 -1.14119,1.344 -0.53711,0.0623 -0.7164,-0.0134 -0.62656,-0.26458 z m 5.62361,-5.95927 c -0.51062,-1.41062 -0.96778,-2.60414 -1.01591,-2.65227 -0.0481,-0.0481 -0.45016,0.89764 -0.89339,2.10173 -0.44323,1.20408 -0.88964,2.3976 -0.99201,2.65227 -0.1675,0.41665 0.0149,0.46302 1.82179,0.46302 h 2.00793 z" id="path117"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="AND-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="AND-gate-explanation-symbol-text-span gate-symbol-text-span">AND GATE</span>
+                            </div>
+                        </div>
+                        <div class="AND-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- OR gate -->
+                <div class="OR-gate gate-type">
+                    <div class="OR-gate-heading gate-heading">
+                        <h1 class="OR-gate-h1 gate-h1">OR Gate</h1>
+                    </div>
+                    <div class="OR-gate-explanation gate-explain">
+                        <div class="OR-gate-explanation-text gate-explain-text">
+                            <p class="OR-gate-explanation-text-p gate-explain-p">The OR gate is so named because, the gate acts in the same way as the logical OR operator. The output is 1 (true/high) when both or one of the inputs are 1 (true/high) Otherwise, the output is 0 (false/low).</p>
+                        </div>
+                        <div class="OR-gate-explanation-symbol gate-symbol">
+                            <div class="OR-gate-explanation-symbol-view-box gate-svg-container">
+                                <svg viewBox="246.49 295.513 160.867 57.834" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="layer1" transform="matrix(1, 0, 0, 1, 223.276169, 144.092529)">
+                                        <path style="fill:#090909;stroke:none;stroke-width:1" d="M 80.098988,165.29922 H 51.788572 c -2.175404,0 -4.443413,-0.18164 -6.607625,0.0538 -0.731493,0.0796 -1.910001,0.34105 -1.910001,1.29046 0,0.96588 1.166972,1.20644 1.910001,1.26907 2.263696,0.19082 4.601025,0.0325 6.872208,0.0325 h 29.104166 c 1.412611,8.31083 1.291961,15.50088 0,23.8125 H 52.053155 c -2.271183,0 -4.608512,-0.15822 -6.872208,0.0325 -0.743029,0.0624 -1.910001,0.30321 -1.910001,1.26894 0,0.94932 1.178508,1.211 1.910001,1.29064 2.164212,0.23521 4.432221,0.0537 6.607625,0.0537 h 28.310416 c -1.408113,3.76184 -3.935148,7.38558 -7.408333,9.51362 -0.929746,0.56965 -4.078817,1.50892 -3.565525,3.06441 0.443177,1.34276 3.064404,0.9099 4.094691,0.821 4.0513,-0.34952 8.120063,-0.39873 12.170833,-0.81995 13.659908,-1.41975 25.447886,-6.03303 33.335116,-17.87075 1.62269,-2.43549 3.44276,-5.09535 4.23572,-7.9375 h 21.16666 c 1.49067,0 3.51076,0.33946 4.91543,-0.23839 0.82577,-0.33972 1.17316,-1.34832 0.38868,-1.95474 -1.43061,-1.10517 -4.91014,-0.4527 -6.62702,-0.4527 h -13.22917 c -1.75921,0 -4.35663,0.46937 -5.97852,-0.31089 -1.3335,-0.64161 -2.05793,-2.46703 -2.80459,-3.65786 -1.56527,-2.49653 -3.27448,-4.89741 -5.18371,-7.14375 -5.68855,-6.69248 -12.85346,-11.29395 -21.487346,-13.06695 -6.177756,-1.26865 -12.511087,-1.59253 -18.785416,-2.06407 -1.335617,-0.10038 -5.288492,-1.16686 -6.128015,0.25474 -0.840316,1.42359 1.861873,2.27875 2.688696,2.71761 3.942821,2.09241 6.740525,5.88174 8.201819,10.042 m -4.233333,39.6875 v -0.26458 c 11.220714,-9.0178 11.535568,-29.89874 5.956829,-42.06875 -1.35308,-2.95159 -3.438261,-5.16372 -5.427663,-7.67292 14.569281,0.20492 28.665749,3.07255 38.111639,15.08125 1.86531,2.37167 6.15289,6.85033 6.02562,10.05417 -0.13229,3.33322 -3.86477,7.80997 -5.84411,10.31875 -9.3816,11.89037 -24.456234,14.55129 -38.822315,14.55208 M 23.213572,175.88255 c 2.865649,-0.0867 3.430085,-2.24469 3.96875,-4.7625 2.033588,0 5.997972,-0.75922 7.727341,0.43053 2.238455,1.53996 0.968878,4.22688 4.443492,4.33197 -1.130829,-4.77369 -3.38836,-9.43173 -5.109818,-14.02291 -0.513001,-1.36822 -1.021212,-3.9718 -2.842631,-4.08498 -1.987523,-0.12351 -2.546058,2.66811 -3.077315,4.08498 -1.721459,4.59118 -3.97899,9.24922 -5.109819,14.02291 m 8.202083,-15.61041 3.175,8.73125 h -6.614583 l 3.439583,-8.73125 m 147.637495,12.96458 v 2.91042 h -1.32291 v 1.32291 h 1.32291 c 0,4.74107 -0.93239,8.98208 5.02709,8.99584 v -1.32292 c -4.35372,-0.22992 -3.43959,-4.37727 -3.43959,-7.67292 h 3.43959 v -1.32291 h -3.43959 v -2.91042 h -1.5875 m -20.90076,2.87496 c -5.8666,1.63037 -3.6695,12.14411 2.64319,10.38966 5.84279,-1.62375 3.67718,-12.1462 -2.64319,-10.38966 m 8.72993,0.0355 c 0,3.17103 -0.97102,12.53014 5.01412,10.23249 0.7157,-0.2749 1.27926,-0.75935 1.86505,-1.23666 v 1.32292 h 1.85208 v -10.31875 h -1.85208 c 0,2.14497 0.60933,5.43639 -0.45615,7.36679 -0.76729,1.39039 -2.64742,1.98199 -3.80259,0.68951 -1.55469,-1.73938 -0.76835,-5.87799 -0.76835,-8.0563 h -1.85208 m -7.40833,1.35996 c 3.85365,0 3.8735,7.5557 0,7.57396 -3.89785,0.0182 -3.88197,-7.57396 0,-7.57396 M 25.330239,201.81172 c 3.066071,0 7.260854,0.72496 10.042313,-0.80116 3.845666,-2.11005 2.938648,-7.1919 -0.781897,-8.72384 2.470944,-1.76424 3.808624,-5.24192 0.754751,-7.31255 -1.533949,-1.04008 -3.723058,-1.10808 -5.517251,-1.14538 -1.08921,-0.0228 -3.022494,-0.33947 -3.922315,0.42174 -1.033198,0.87418 -0.575601,3.3991 -0.575601,4.59661 v 12.96458 m 2.38125,-10.58333 v -5.29167 c 1.753949,0 4.154064,-0.39396 5.7209,0.55139 1.812263,1.093 1.419648,3.67268 -0.46826,4.41484 -1.571625,0.61807 -3.594708,0.32544 -5.25264,0.32544 m 0,8.46666 c 0,-1.5322 -0.61431,-4.80404 0.43053,-6.03911 0.562874,-0.66516 1.701059,-0.57706 2.480707,-0.54928 1.322943,0.0471 2.980319,0.1823 3.923241,1.23402 1.873753,2.08995 0.187934,5.0755 -2.337302,5.31283 -1.482037,0.13944 -3.00953,0.0415 -4.497176,0.0415 z" id="path1313"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="OR-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="OR-gate-explanation-symbol-text-span gate-symbol-text-span">OR GATE</span>
+                            </div>
+                        </div>
+                        <div class="OR-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- NOT gate -->
+                <div class="NOT-gate gate-type">
+                    <div class="NOT-gate-heading gate-heading">
+                        <h1 class="NOT-gate-h1 gate-h1">NOT Gate</h1>
+                    </div>
+                    <div class="NOT-gate-explanation gate-explain">
+                        <div class="NOT-gate-explanation-text gate-explain-text">
+                            <p class="NOT-gate-explanation-text-p gate-explain-p">A logical inverter, sometimes called a NOT gate to differentiate it from other types of electronic inverter devices, has only one input. It reverses the logic state. If the input is 1, then the output is 0. If the input is 0, then the output is 1.</p>
+                        </div>
+                        <div class="NOT-gate-explanation-symbol gate-symbol">
+                            <div class="NOT-gate-explanation-symbol-view-box gate-svg-container">
+                                <svg viewBox="21.359 208.578 402.795 146.769" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="g-1" transform="matrix(0.623924, 0, 0, 0.623924, 315.458282, 39.776012)">
+                                        <path style="fill:#020202;stroke:none;stroke-width:1" d="m -132.9684,395.80497 c 6.47436,27.98683 46.926497,32.57153 59.859337,7.14375 1.62189,-3.18823 3.09033,-6.71407 3.37608,-10.31875 h 82.55 c 6.60664,0 14.42508,1.16125 20.90208,-0.09 2.24896,-0.43471 3.94758,-2.68103 3.94758,-4.93713 0,-2.2561 -1.69862,-4.50241 -3.94758,-4.93712 -6.477,-1.25122 -14.29544,-0.09 -20.90208,-0.09 h -82.55 c -0.27252,-3.41524 -1.59015,-6.75534 -3.10886,-9.78958 -10.83997,-21.62546 -42.558217,-23.41616 -55.803267,-3.175 -1.93675,2.96254 -3.59568,6.30316 -4.32329,9.78958 -4.42912,-2.52254 -8.52487,-5.88195 -12.7,-8.80533 l -23.8125,-16.66867 c -25.04545,-17.53024 -50.00889,-35.18033 -75.14166,-52.58461 -9.47182,-6.55929 -18.8386,-13.27111 -28.31042,-19.8306 -3.11732,-2.15887 -7.58031,-6.81316 -11.64166,-6.30754 -2.05793,0.25617 -3.85842,1.83716 -4.17698,3.91975 -0.97764,6.39278 -0.0564,13.63557 -0.0564,20.10833 v 62.70625 15.34583 c 0,1.21709 0.5498,4.24365 -0.6133,5.01968 -1.26101,0.84164 -4.26191,0.27199 -5.7367,0.27199 h -15.08125 -56.35624 -17.99167 c -2.69398,0 -5.5708,0.009 -6.81963,2.91042 -1.22952,2.85591 0.29183,6.28993 3.38005,7.00378 5.52582,1.27741 12.57935,0.13997 18.25625,0.13997 h 60.06041 15.08125 c 1.30492,0 4.40663,-0.56568 5.3967,0.42412 1.07897,1.07924 0.42413,4.75218 0.42413,6.19046 v 17.72708 59.53125 15.08125 c 0,2.15186 -0.44529,4.77282 0.96255,6.58998 3.34672,4.31959 8.07403,0.20161 11.20828,-1.91479 9.18448,-6.2021 18.12131,-12.77197 27.25209,-19.05291 26.78218,-18.42294 53.27385,-37.28641 79.90416,-55.92736 l 23.8125,-16.66875 c 4.17512,-2.92338 8.27087,-6.2828 12.7,-8.80533 m -145.52083,-105.83333 27.78125,19.50508 52.91667,37.04166 39.6875,27.78125 18.78541,13.03867 v 0.52917 c -11.18129,6.23093 -21.52385,14.9553 -32.01458,22.29908 l -70.11458,49.06433 -23.8125,16.66875 c -4.43124,3.10171 -8.79607,6.6585 -13.49375,9.3345 V 346.85705 306.90497 295.2633 l 0.26458,-5.29166 m -165.89374,61.91249 -7.29615,19.31459 -19.69135,51.85833 c 2.3698,0 7.9642,1.04299 9.94331,-0.27199 0.99166,-0.65882 1.24899,-2.64451 1.64753,-3.69676 1.25852,-3.3229 2.38022,-6.70613 3.5719,-10.05417 0.41566,-1.1676 0.71094,-3.25834 1.84336,-3.96134 1.80789,-1.12236 6.28861,-0.27199 8.3939,-0.27199 7.22366,0 14.76481,-0.6305 21.95645,0.0156 1.84944,0.16616 2.20927,2.7514 2.73129,4.21772 1.45786,4.09655 2.40692,9.8044 4.82865,13.40961 0.57441,0.85514 1.8714,0.61331 2.76278,0.61331 h 7.40833 l -19.56594,-51.59375 -5.3549,-14.02292 -2.2516,-5.28426 -2.99006,-0.27199 h -7.9375 m 597.69373,8.46667 v 11.90625 h -5.02708 v 5.29167 h 5.02708 v 23.01875 c 0,3.58219 0.45244,8.27854 3.45017,10.70795 4.51908,3.65998 12.05706,2.52121 17.45191,2.52121 v -5.82083 c -3.46604,0 -9.59908,1.1303 -12.37985,-1.42716 -2.0029,-1.84415 -1.64306,-5.63563 -1.64306,-8.09784 v -20.90207 h 14.02291 v -5.29167 H 160.18993 V 360.3508 h -6.87917 m -592.13748,1.32292 c 2.52201,3.98912 3.68221,9.584 5.30569,14.02291 2.47094,6.75587 6.43996,14.08351 7.65889,21.16667 h -25.92916 l 8.35448,-23.01875 4.6101,-12.17083 m 334.96249,3.77983 c 22.473707,-2.68816 33.385117,28.47446 14.552077,40.70588 -3.02418,1.96454 -6.47964,3.15384 -10.05416,3.59278 -2.465917,0.30295 -4.992687,0.005 -7.408337,-0.50932 -18.77748,-3.99865 -23.00023,-29.97703 -7.14375,-40.24048 3.06388,-1.98385 6.44261,-3.11706 10.05417,-3.54886 m 175.947907,5.85761 c -4.01637,0.54663 -7.91898,1.95871 -10.80294,4.93845 -10.19175,10.53095 -7.12523,34.57602 8.42169,38.10582 2.36802,0.53737 4.99269,0.71279 7.40833,0.42386 4.07723,-0.48762 8.11742,-1.95791 10.99873,-4.99639 10.16529,-10.72012 7.31573,-35.0901 -8.88206,-38.19763 -2.30187,-0.44185 -4.81542,-0.59108 -7.14375,-0.27411 m 31.750003,0.94589 v 21.43125 c 0,5.11228 -0.1614,10.49284 2.47121,15.08125 5.09058,8.88021 20.49462,7.85786 25.04546,-1.05833 h 0.26458 v 6.08541 h 6.87917 v -41.53958 h -6.87917 v 19.31458 c 0,3.80524 0.3175,7.90337 -1.56104,11.37709 -3.09034,5.7105 -12.11792,8.78945 -16.87248,3.17103 -2.62202,-3.09775 -2.46856,-7.5655 -2.46856,-11.37312 v -22.48958 h -6.87917 m -30.691673,4.83896 c 16.82486,-2.1918 18.64255,29.84686 3.175,31.86166 -16.85395,2.19551 -18.63195,-29.84791 -3.175,-31.86166 z" id="path3507"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="NOT-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="NOT-gate-explanation-symbol-text-span gate-symbol-text-span">NOT GATE</span>
+                            </div>
+                        </div>
+                        <div class="NOT-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>0</td></tr>
+                                    <tr><td>0</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAND gate -->
+                <div class="NAND-gate gate-type">
+                    <div class="NAND-gate-heading gate-heading">
+                        <h1 class="NAND-gate-h1 gate-h1">NAND Gate</h1>
+                    </div>
+                    <div class="NAND-gate-explanation gate-explain">
+                        <div class="NAND-gate-explanation-text gate-explain-text">
+                            <p class="NAND-gate-explanation-text-p gate-explain-p">The NAND gate operates as an AND gate followed by a NOT gate. It acts in the manner of the logical operation "AND" followed by negation. The output is "false" if both inputs are "true." Otherwise, the output is "true".</p>
+                        </div>
+                        <div class="NAND-gate-explanation-symbol gate-symbol">
+                            <div class="NAND-gate-explanation-symbol-view-box gate-svg-container">
+                                <svg viewBox="131.775 275.499 302.155 105.875" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="g-1" transform="matrix(1, 0, 0, 1, 533.683044, -260.384338)">
+                                        <path style="fill:#040404;stroke:none;stroke-width:1" d="m -324.12031,560.55076 h -30.42709 c -2.33706,0 -8.76353,-1.12792 -9.85758,1.59914 -1.71344,4.2709 6.14971,3.16336 8.27008,3.16336 h 24.07709 c 1.56977,0 7.0477,-0.83926 7.77795,0.83291 1.09247,2.50216 0.15955,7.28424 0.15955,10.015 v 24.07709 7.40833 c -0.002,0.99642 0.11271,2.23573 -1.07395,2.5617 -2.70086,0.74189 -6.4426,0.0841 -9.2448,0.0841 h -20.10834 c -2.16508,0 -8.52937,-1.075 -9.74222,1.08718 -2.52465,4.50029 6.40715,3.67532 8.41931,3.67532 h 31.75 v 19.05 c 0,1.75022 -0.69321,5.4274 0.64399,6.76434 1.36843,1.36869 5.23293,0.644 7.02892,0.644 h 19.84375 c 10.54894,0 21.73738,1.15781 32.01459,-1.55681 18.58698,-4.90961 32.54481,-23.09998 34.925,-41.83486 2.86782,2.3114 5.77876,4.09046 9.525,4.45294 7.62053,0.73739 15.35297,-4.59132 16.40416,-12.39044 h 30.95625 c 2.29341,0 9.42499,1.22502 9.42499,-2.38125 0,-3.60627 -7.13158,-2.38125 -9.42499,-2.38125 h -30.95625 c -0.186,-8.7339 -9.8163,-14.25284 -17.72708,-12.84182 -3.55388,0.63395 -5.8764,2.65245 -8.73125,4.63974 -0.31697,-3.88171 -1.95712,-7.83246 -3.47927,-11.37709 -6.14019,-14.29681 -18.53618,-25.35486 -33.82698,-28.72729 -9.37974,-2.06878 -19.8075,-0.90604 -29.36875,-0.90604 h -19.57917 c -1.93463,0 -5.62133,-0.7157 -7.05961,0.85418 -1.23534,1.34811 -0.6133,4.58116 -0.6133,6.28957 v 17.19792 m 4.7625,76.2 v -95.77917 h 31.48541 c 11.87001,0 22.67136,-0.16068 33.07292,6.46533 29.1719,18.5833 27.93312,68.6893 -3.175,84.74766 -9.40938,4.85695 -18.81505,4.56618 -29.10417,4.56618 h -32.27916 m -82.55,-57.15 c 1.22335,0 3.59172,0.45534 4.62756,-0.27199 1.5875,-1.11469 2.76778,-6.57966 3.04535,-8.45926 h 10.84792 c 1.13202,0 3.14008,-0.38074 4.12247,0.27199 2.32066,1.54173 1.2536,6.52383 3.4716,8.18727 0.98028,0.73501 3.39619,0.27199 4.57676,0.27199 -2.9157,-8.94583 -6.77068,-17.64427 -10.06739,-26.45834 -1.41558,-3.78446 -2.18866,-8.34739 -7.33571,-6.79505 -1.80334,0.54388 -3.05109,6.44117 -3.70988,8.11797 -3.26234,8.30368 -6.8144,16.65446 -9.57868,25.13542 m 15.34583,-28.575 2.65912,6.61458 3.4263,9.525 h -12.17084 l 3.755,-10.31875 2.33042,-5.82083 m 277.01875,24.07708 v 5.55625 h -2.38125 v 2.38125 h 2.38125 c 0,3.70073 -0.0873,7.4131 0.003,11.1125 0.0423,1.72482 0.35454,3.73962 1.86002,4.80113 2.15106,1.51633 5.44777,1.0197 7.926913,1.0197 v -2.64583 c -1.666873,0 -4.132793,0.45244 -5.521853,-0.66516 -1.25148,-1.00912 -1.09273,-2.65589 -1.09273,-4.09734 v -9.525 h 6.614583 v -2.38125 h -6.614583 v -5.55625 h -3.175 m -109.27292,1.97247 c 13.38289,-0.32623 13.94116,20.47002 0.52917,20.77773 -13.5345,0.31088 -14.09753,-20.447 -0.52917,-20.77773 m 71.17292,3.17103 c -11.24532,1.81054 -8.81883,21.90618 3.175,20.17712 11.59404,-1.67137 9.14135,-22.16017 -3.175,-20.17712 m 15.61042,0.41275 c 0,4.80854 -1.03717,11.02678 0.55562,15.61042 2.09021,6.01212 8.89,4.71276 12.40896,1.05833 v 2.64583 h 3.175 v -19.31458 h -3.175 c 0,4.1955 1.15888,10.46295 -0.79375,14.28644 -1.53987,3.01281 -5.9055,4.03278 -8.0301,1.05542 -1.10067,-1.54437 -0.96573,-3.49011 -0.96573,-5.28769 v -10.05417 h -3.175 m -14.81667,2.20371 c 7.78933,-1.38112 8.80533,13.67367 1.85208,14.90716 -7.79806,1.38271 -8.80348,-13.6742 -1.85208,-14.90716 m -251.08958,12.87754 v 33.3375 c 6.02617,0 15.2895,1.70127 20.37186,-2.25663 5.21996,-4.06532 3.90392,-14.71851 -3.43853,-15.47045 1.44886,-0.77259 3.00699,-1.27477 4.02167,-2.65642 2.78421,-3.79095 1.14062,-9.71338 -2.96334,-11.68797 -5.16805,-2.48629 -12.40382,-1.26603 -17.99166,-1.26603 m 4.49791,13.75833 v -10.05416 c 3.3591,0 8.08853,-0.83 11.10843,0.93477 2.8158,1.64544 2.89941,6.58892 0,8.21531 -3.05739,1.71477 -7.73523,0.90408 -11.10843,0.90408 m 0,15.875 v -12.17083 c 3.53455,0 8.42794,-0.85381 11.64146,0.90408 3.51123,1.92088 3.64008,8.08858 0.26376,10.20974 -3.15875,1.98464 -8.34268,1.05701 -11.90522,1.05701 z" id="path4821"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="NAND-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="NAND-gate-explanation-symbol-text-span gate-symbol-text-span">NAND GATE</span>
+                            </div>
+                        </div>
+                        <div class="NAND-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- NOR gate -->
+                <div class="NOR-gate gate-type">
+                    <div class="NOR-gate-heading gate-heading">
+                        <h1 class="NOR-gate-h1 gate-h1">NOR Gate</h1>
+                    </div>
+                    <div class="NOR-gate-explanation gate-explain">
+                        <div class="NOR-gate-explanation-text gate-explain-text">
+                            <p class="NOR-gate-explanation-text-p gate-explain-p">The NOR gate is a combination OR gate followed by an inverter. Its output is "true" if both inputs are "false." Otherwise, the output is "false".</p>
+                        </div>
+                        <div class="NOR-gate-explanation-symbol gate-symbol">
+                            <div class="NOR-gate-explanation-symbol-view-box gate-svg-container">
+                                <svg viewBox="11.25 40.923 472.1 166.862" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="layer1" transform="matrix(1.461086, 0.00764, -0.00764, 1.461086, 697.588806, -921.449219)" >
+                                        <path style="fill:#040404;stroke:none;stroke-width:1" d="m -361.71932,688.37271 h -49.47708 c -3.95314,0 -7.95867,-0.18944 -11.90625,0.0106 -1.54332,0.0783 -2.95513,0.9054 -2.86994,2.63525 0.0953,1.93331 1.7907,2.37252 3.39911,2.38098 3.96848,0.0209 7.93776,2.7e-4 11.90625,2.7e-4 h 50.53541 c 1.63989,12.17877 3.21654,23.64846 1.89601,35.98333 -0.30454,2.84427 -0.69639,5.65944 -1.26101,8.46667 -0.19923,0.99007 -0.29157,2.57228 -1.23798,3.16759 -0.97208,0.61172 -2.79162,0.27199 -3.89494,0.27199 h -9.525 -35.71874 -11.64167 c -1.50522,0 -3.34989,-0.23812 -4.18597,1.33456 -0.89482,1.68354 0.3339,3.40175 2.0693,3.64252 3.91054,0.54213 8.22166,0.05 12.17084,0.05 h 49.74166 c -3.30385,7.41812 -6.53997,14.50604 -13.49375,19.30797 -2.05211,1.41684 -8.40608,2.86676 -7.55703,6.09097 0.74877,2.84427 4.69874,1.68936 6.76328,1.59888 7.07549,-0.30983 14.106,-0.74295 21.16667,-1.31049 19.98503,-1.60628 40.07802,-7.4668 53.93002,-22.77692 6.77254,-7.48532 10.91829,-16.00411 15.91998,-24.60625 6.35185,13.42708 29.15258,10.8413 30.42708,-4.7625 h 33.07292 c 2.48972,0 10.21079,1.35096 10.01368,-2.64583 -0.1823,-3.69755 -7.53904,-2.38125 -10.01368,-2.38125 h -33.07292 c -1.20042,-14.69655 -25.66802,-19.43285 -30.42708,-4.49792 h -0.52917 c -1.60946,-5.08582 -5.73537,-10.24176 -8.80824,-14.55208 -8.39497,-11.77581 -19.03916,-21.71139 -32.73134,-26.87503 -8.98922,-3.39 -18.55735,-4.53083 -28.04584,-5.44907 -6.87466,-0.66526 -13.76283,-1.16448 -20.6375,-1.85187 -2.04946,-0.20492 -5.93433,-1.49701 -6.94716,1.10712 -1.33271,3.42639 5.15752,4.67196 7.21175,6.00173 6.8199,4.41458 11.29003,12.08596 13.75833,19.65878 m -7.9375,79.63959 c 3.49224,-4.56644 7.4123,-8.1788 9.98591,-13.49375 4.79848,-9.91076 6.48123,-20.86531 6.95774,-31.75 0.62654,-14.30232 -0.65193,-29.14544 -6.70666,-42.33334 -2.3241,-5.06227 -6.05604,-8.53149 -9.17866,-12.96458 4.22381,4.5e-4 8.49842,0.60682 12.7,1.01341 10.9863,1.06315 22.6023,2.32185 32.54375,7.53798 10.3132,5.41128 18.3441,13.51565 25.05843,22.93403 3.01095,4.22354 5.7023,8.68442 8.19811,13.22916 0.8046,1.46474 2.51434,3.56765 2.52042,5.29167 0.006,1.72932 -1.51447,3.77084 -2.23282,5.29167 -2.20477,4.66751 -4.65878,9.19136 -7.52686,13.49375 -5.30807,7.9629 -11.76364,14.91059 -19.93186,19.99588 -15.03601,9.3607 -35.05306,11.3964 -52.3875,11.75412 m -96.04375,-59.00209 c 1.25643,0 3.57122,0.44583 4.65164,-0.27199 2.51339,-1.66978 1.30636,-7.0993 3.88853,-8.71643 1.07596,-0.67389 3.1991,-0.27199 4.42442,-0.27199 h 11.37708 c 0.29607,2.00501 1.60655,7.79462 3.30994,8.98842 1.03716,0.72708 3.40333,0.27199 4.62756,0.27199 -0.42863,-2.90274 -1.98041,-5.72558 -2.99482,-8.46666 -2.32595,-6.28571 -4.80616,-12.51453 -7.17153,-18.78542 -0.6903,-1.83033 -2.01295,-8.07109 -4.13565,-8.42748 -5.45486,-0.91583 -5.7272,3.1764 -7.39383,7.36915 -2.30132,5.78935 -4.39018,11.66389 -6.66827,17.4625 -1.34774,3.43032 -3.37558,7.19508 -3.91507,10.84791 m 16.40417,-30.42708 6.35,17.19792 h -12.96458 l 6.08541,-17.19792 h 0.52917 m 295.53957,31.48542 h -2.38125 v 2.64583 h 2.38125 c 0,4.06294 -0.43656,8.40872 0.11378,12.43542 0.21431,1.57797 0.41275,3.2766 1.76477,4.3262 2.29393,1.77853 6.00075,1.23005 8.70479,1.23005 v -2.91042 c -1.73567,0 -4.60904,0.54451 -6.02456,-0.66516 -1.1774,-1.00462 -1.11655,-2.95407 -1.11919,-4.36192 v -10.05417 h 7.14375 v -2.64583 h -7.14375 v -6.08542 c -0.83079,0 -2.32304,-0.27702 -3.01625,0.27199 -1.0504,0.83212 -0.42334,4.56512 -0.42334,5.81343 m -118.79791,-3.62479 c 4.98687,-0.71888 9.76683,1.39753 12.07109,6.00604 3.107,6.21374 -0.72628,14.74496 -7.83775,15.79536 -4.73208,0.69903 -9.54908,-1.16443 -11.93139,-5.47661 -3.51605,-6.36482 0.28284,-15.25588 7.69805,-16.32479 m 77.7875,3.21177 c -12.10998,1.90686 -9.48267,23.36298 3.43958,21.50031 12.39309,-1.78673 9.73402,-23.5749 -3.43958,-21.50031 m 16.66875,0.41302 c 0,5.21838 -1.11919,11.97398 0.71702,16.93333 2.3151,6.25369 9.73137,4.5937 13.30589,0.79375 v 2.91042 h 3.43959 v -20.6375 h -3.43959 c 0,4.34366 1.28059,11.15668 -0.80697,15.08098 -1.57957,2.96757 -6.12246,4.47252 -8.509,1.53882 -1.32292,-1.62586 -1.26736,-3.79465 -1.26736,-5.77188 v -10.84792 h -3.43958 m -15.875,2.4683 c 8.40052,-1.4732 9.58056,14.38963 2.11667,15.7009 -8.47461,1.48908 -9.68375,-14.37402 -2.11667,-15.7009 m -267.49374,13.4067 v 35.45417 c 6.51137,0 15.73371,1.65496 21.43125,-2.14445 6.76407,-4.51062 4.01955,-15.17915 -3.43959,-16.90555 1.81981,-0.69771 3.40704,-1.2245 4.59079,-2.91069 2.73658,-3.8981 0.98028,-9.85467 -3.00329,-12.03351 -5.36249,-2.93317 -13.67517,-1.45997 -19.57916,-1.45997 m 4.7625,14.55208 V 729.9123 c 3.55602,0 8.70884,-0.92525 11.90228,0.93477 3.16706,1.84468 2.95116,7.24535 -0.26088,8.8982 -3.19442,1.64412 -8.13922,0.75036 -11.6414,0.75036 m 0,16.93334 v -12.96459 c 3.93628,0 9.46644,-0.98716 12.96061,1.18507 3.29036,2.04576 3.38402,8.60055 0,10.62514 -3.55222,2.12487 -8.98811,1.15438 -12.96061,1.15438 z" id="path5251"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="NOR-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="NOR-gate-explanation-symbol-text-span gate-symbol-text-span">NOR GATE</span>
+                            </div>
+                        </div>
+                        <div class="NOR-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- XOR gate -->
+                <div class="XOR-gate gate-type">
+                    <div class="XOR-gate-heading gate-heading">
+                        <h1 class="XOR-gate-h1 gate-h1">XOR Gate</h1>
+                    </div>
+                    <div class="XOR-gate-explanation gate-explain">
+                        <div class="XOR-gate-explanation-text gate-explain-text">
+                            <p class="XOR-gate-explanation-text-p gate-explain-p">The XOR ( exclusive-OR ) gate acts in the same way as the logical "either/or." If the output is 1 if the inputs are different, but 0 if the inputs are the same. </p>
+                        </div>
+                        <div class="XOR-gate-explanation-symbol gate-symbol">
+                            <div class="XOR-gate-explanation-symbol-view-box gate-svg-container">
+                                <svg viewBox="136.583 299.801 302.155 105.349" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="layer1" transform="matrix(1, 0, 0, 1, 541.835815, -279.832092)">
+                                        <path style="fill:#040404;stroke:none;stroke-width:1" d="m -297.83203,604.96654 h -18.25625 c -1.40996,-8.18825 -8.7921,-16.67651 -15.61042,-20.88494 -1.88515,-1.16348 -10.56243,-6.02425 -10.80743,-1.07527 -0.13864,2.79813 6.63178,4.18627 8.69077,5.52032 5.72188,3.70758 10.49972,9.97834 12.7,16.43989 h -36.77709 c -2.51222,0 -5.79252,-0.55298 -8.20102,0.21272 -1.52215,0.48392 -2.45719,2.28521 -1.39224,3.6957 0.88874,1.17687 2.74902,0.85408 4.03701,0.85408 h 10.31875 24.60625 c 1.99867,0 7.32605,-0.93716 8.8609,0.42412 0.97102,0.86149 1.08267,2.87655 1.34567,4.07379 0.83159,3.78698 1.11495,7.5401 1.48008,11.37709 0.37862,3.97827 0.62944,8.45846 0.10742,12.43541 -0.65987,5.02497 -0.38973,10.87253 -2.5318,15.59481 -0.95382,2.10264 -7.24508,1.07394 -9.26227,1.07394 h -28.83958 c -2.3622,0 -11.62473,-1.4134 -10.46745,2.90645 0.84667,3.16045 8.77279,1.85605 11.2612,1.85605 h 35.45417 c -3.05832,6.45398 -6.82625,12.5103 -12.96459,16.48381 -2.06163,1.33456 -8.5672,2.63207 -8.42618,5.47635 0.10715,2.16508 2.27727,2.40744 3.92827,1.92616 3.38772,-0.98769 6.42593,-2.68711 9.26041,-4.77176 4.03358,-2.96704 7.39326,-7.08104 9.8261,-11.44164 1.01812,-1.82483 2.04735,-6.28915 3.7719,-7.40093 1.14776,-0.7403 3.60045,-0.27199 4.92284,-0.27199 h 12.7 c -2.32013,6.85827 -6.95537,13.43925 -12.96459,17.52971 -1.97485,1.34408 -8.91222,2.92311 -8.61245,5.75336 0.29131,2.74902 4.2889,2.2569 6.2312,2.07195 6.75429,-0.64267 13.59826,-0.77946 20.37292,-1.25412 21.53682,-1.50971 43.44829,-6.6548 58.71395,-23.04256 4.75377,-5.10329 8.82386,-10.87729 12.26873,-16.93334 1.25333,-2.20318 2.82866,-7.43743 5.00909,-8.72384 0.90303,-0.53287 2.37623,-0.27199 3.38323,-0.27199 h 7.40833 27.78125 c 3.09483,0 6.45954,0.37518 9.525,-0.05 1.2327,-0.17092 2.28124,-0.99933 2.28124,-2.33124 0,-1.33191 -1.04881,-2.16032 -2.28124,-2.33124 -3.06546,-0.42519 -6.43017,-0.05 -9.525,-0.05 h -27.25208 c -3.10912,0 -8.46746,1.04563 -11.32814,-0.15954 -1.02922,-0.43366 -1.52796,-1.85262 -2.06057,-2.75088 -1.2663,-2.13545 -2.54291,-4.2709 -3.90022,-6.35 -4.64926,-7.12152 -9.9613,-13.63715 -16.04857,-19.5753 -14.53965,-14.18347 -33.84524,-17.49219 -53.18125,-19.36337 -7.12973,-0.68996 -14.28882,-1.21039 -21.43125,-1.78449 -1.90844,-0.1534 -6.44922,-1.05468 -5.9563,2.35757 0.24686,1.70733 1.95104,2.01661 3.31047,2.47637 2.24763,0.76023 4.445,1.98189 6.35,3.38672 6.07192,4.47781 8.75585,10.48626 12.17083,16.89209 m -8.46667,74.6125 v -0.26459 c 6.15315,-4.68841 10.20948,-11.66918 12.91379,-18.78541 5.98778,-15.75647 5.8965,-35.15043 1.73619,-51.32917 -2.16799,-8.43179 -6.50795,-18.37166 -13.85623,-23.54792 1.63777,-0.68082 4.33044,0.0527 6.08542,0.21966 4.1402,0.39402 8.29866,0.53298 12.43542,1.02772 7.05564,0.84381 14.07927,1.67452 20.90208,3.78645 13.06142,4.04302 23.75376,12.43688 32.22625,23.01201 3.42106,4.27011 6.49446,8.80586 9.31333,13.49375 0.83635,1.39065 2.78263,3.59939 2.67653,5.29166 -0.11404,1.81663 -1.64677,3.73274 -2.46989,5.29167 -2.37252,4.49342 -5.00988,8.88233 -8.04624,12.96458 -17.33629,23.30927 -46.40077,28.83959 -73.91665,28.83959 m -98.95416,-55.5625 c 1.22335,0 3.59172,0.45534 4.62756,-0.272 1.5875,-1.11468 2.76778,-6.57965 3.04535,-8.45925 h 10.84792 c 1.13202,0 3.14008,-0.38074 4.12247,0.27199 2.32066,1.54173 1.2536,6.52383 3.4716,8.18726 0.98028,0.73502 3.39619,0.272 4.57676,0.272 -2.9157,-8.94583 -6.77068,-17.64427 -10.06739,-26.45834 -1.41558,-3.78446 -2.18866,-8.34739 -7.33571,-6.79505 -1.80334,0.54388 -3.05109,6.44117 -3.70988,8.11797 -3.26207,8.30315 -6.81463,16.65526 -9.57868,25.13542 m 15.34583,-28.575 2.65912,6.61458 3.4263,9.525 h -12.17084 l 3.25647,-8.99583 2.82895,-7.14375 m 75.40625,59.26666 c 1.8714,-9.06621 3.2594,-18.21286 2.62202,-27.51666 -0.39952,-5.8346 -2.1082,-11.67607 -2.35744,-17.4625 h 13.22917 c 1.14406,0 3.67374,-0.47281 4.53655,0.42412 1.5449,1.60655 1.58168,6.18279 1.88515,8.30713 1.22423,8.56932 1.14406,17.34423 0.17965,25.92916 -0.27913,2.48391 -0.70246,4.97576 -1.27899,7.40834 -0.18362,0.7739 -0.28416,2.1291 -0.97367,2.63842 -1.03373,0.76385 -3.64119,0.27199 -4.87786,0.27199 h -12.96458 m 201.6125,-35.18958 v 5.55625 h -2.38125 v 2.38125 h 2.38125 c 0,3.70073 -0.0873,7.4131 0.003,11.1125 0.0423,1.72482 0.35454,3.73962 1.86002,4.80113 2.15106,1.51633 5.44777,1.0197 7.92692,1.0197 v -2.64583 c -1.66688,0 -4.13279,0.45244 -5.52186,-0.66516 -1.25147,-1.00912 -1.09272,-2.65589 -1.09272,-4.09734 v -9.525 h 6.61458 v -2.38125 h -6.61458 v -5.55625 h -3.175 m -38.10001,5.15011 c -11.34824,2.04603 -8.70003,22.31576 3.43958,20.12686 11.32682,-2.04232 8.69421,-22.31496 -3.43958,-20.12686 m 15.61042,0.40614 c 0,4.80854 -1.03717,11.02677 0.55562,15.61042 2.09021,6.01212 8.89001,4.71275 12.40897,1.05833 v 2.64583 h 3.175 v -19.31458 h -3.175 c 0,4.20582 1.15358,10.45025 -0.79375,14.28724 -1.53194,3.0181 -5.90022,4.0378 -8.03011,1.05462 -1.10067,-1.54437 -0.96573,-3.49011 -0.96573,-5.28769 v -10.05417 h -3.175 m -14.81667,2.20371 c 7.78933,-1.38112 8.80533,13.67367 1.85208,14.90716 -7.79806,1.38271 -8.80348,-13.6742 -1.85208,-14.90716 m -251.08958,12.87754 v 33.3375 c 6.02617,0 15.2895,1.70127 20.37186,-2.25663 5.40676,-4.21085 3.74041,-14.39439 -3.43853,-15.47045 1.44886,-0.77259 3.00699,-1.27477 4.02167,-2.65642 2.78183,-3.7883 1.1295,-9.71868 -2.96334,-11.68797 -5.16805,-2.48629 -12.40382,-1.26603 -17.99166,-1.26603 m 4.49791,13.75833 v -10.05416 c 3.3591,0 8.08853,-0.83 11.10843,0.93477 2.8158,1.64544 2.89941,6.58892 0,8.21531 -3.05739,1.71477 -7.73523,0.90408 -11.10843,0.90408 m 0,15.875 v -12.17083 c 3.53455,0 8.42794,-0.85381 11.64146,0.90408 3.51123,1.92088 3.64008,8.08858 0.26376,10.20974 -3.15875,1.98464 -8.34268,1.05701 -11.90522,1.05701 z" id="path5036"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="XOR-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="XOR-gate-explanation-symbol-text-span gate-symbol-text-span">XOR GATE</span>
+                            </div>
+                        </div>
+                        <div class="XOR-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- XNOR gate -->
+                <div class="XNOR-gate gate-type">
+                    <div class="XNOR-gate-heading gate-heading">
+                        <h1 class="XNOR-gate-h1 gate-h1">XNOR Gate</h1>
+                    </div>
+                    <div class="XNOR-gate-explanation gate-explain">
+                        <div class="XNOR-gate-explanation-text gate-explain-text">
+                            <p class="XNOR-gate-explanation-text-p gate-explain-p">The XNOR (exclusive-NOR) gate is a combination XOR gate followed by an inverter. Its output is 1 if the inputs are the same, and 0 if the inputs are different. </p>
+                        </div>
+                        <div class="XNOR-gate-explanation-symbol gate-symbol">
+                            <div class="XNOR-gate-explanation-symbol-view-box gate-svg-conatiner">
+                                <svg viewBox="285.436 184.621 94.192 32.823" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="g-1" transform="matrix(1, 0, 0, 1, 597.689697, -289.082001)">
+                                        <path style="fill:#000000;stroke:none;stroke-width:1" d="m -281.82645,481.74776 c -1.34567,0 -3.52796,0.41407 -4.72731,-0.27194 -1.9023,-1.08802 -2.58829,-4.39602 -4.53414,-5.83266 -0.37875,-0.27966 -4.29776,-2.56138 -3.98854,-0.79478 0.15668,0.89516 2.26457,1.49717 2.93103,2.01234 1.5686,1.21253 2.87917,2.9818 3.43979,4.88704 h -9.26042 c -0.40526,1.9e-4 -2.99722,-0.13256 -2.33471,0.91419 0.44633,0.70519 2.16623,0.40873 2.86388,0.40873 2.56929,0 5.97281,-0.59296 8.45135,0.0841 1.25613,0.34314 1.38295,2.00133 1.52635,3.09089 0.39238,2.98376 0.73211,6.91393 -0.46024,9.77408 -0.88178,2.11507 -7.52697,1.07383 -9.51746,1.07383 -0.53224,0 -3.13981,-0.30067 -2.93124,0.74883 0.17029,0.85693 2.06923,0.57406 2.66666,0.57409 h 8.99583 c -0.77203,2.09232 -2.11238,3.96743 -3.96875,5.2324 -0.55015,0.37491 -2.56506,0.97499 -2.40207,1.85552 0.28273,1.52771 3.49409,-0.63473 3.98568,-1.01388 1.89929,-1.465 2.56032,-4.62015 4.34782,-5.80205 1.13109,-0.74782 3.59992,-0.27199 4.91649,-0.27199 -0.60749,2.10873 -1.93437,4.25344 -3.70814,5.5753 -0.54266,0.40428 -2.48195,1.07421 -2.17844,1.99707 0.27371,0.83212 1.57519,0.46435 2.18241,0.40984 2.11217,-0.18997 4.23677,-0.13387 6.35,-0.3847 8.26162,-0.98134 17.04499,-4.90299 19.57917,-13.68293 h 0.52917 c 1.86981,3.97352 8.02825,2.66438 8.46666,-1.5875 h 9.525 c 0.53234,0 3.13981,0.30068 2.93132,-0.74882 -0.1778,-0.89379 -2.30505,-0.57409 -2.93132,-0.57409 h -9.525 c -0.48366,-4.69178 -6.70957,-5.2087 -8.73125,-1.32292 -5.10593,-8.34115 -10.71113,-12.98316 -20.6375,-13.78099 -1.94204,-0.15609 -3.87588,-0.39869 -5.82083,-0.52815 -0.53552,-0.0356 -1.67746,-0.31856 -1.91783,0.39034 -0.31433,0.92681 1.64134,1.56908 2.18215,1.95683 1.83964,1.31876 3.0853,3.46289 3.70443,5.61197 m -2.11667,23.28333 c 0.99298,-2.14233 2.69611,-3.77983 3.51949,-6.08541 2.96333,-8.29781 0.91122,-16.30445 -3.25491,-23.54792 8.14018,0.34951 15.27414,2.05068 20.25968,8.99583 1.08188,1.50702 3.38005,4.107 3.1205,6.08542 -0.23734,1.80877 -1.67296,3.81802 -2.67547,5.29167 -0.93398,1.37281 -1.98623,2.76423 -3.24617,3.85259 -5.33877,4.61169 -11.26146,4.2082 -17.72312,5.40782 m -28.31042,-17.4625 c 2.03714,-0.0677 1.38748,-1.46439 2.7567,-2.37389 2.26586,-1.50511 4.67548,0.19711 5.1808,2.37389 h 1.5875 c -0.90593,-2.67787 -2.01242,-5.28738 -2.99474,-7.9375 -0.32326,-0.87214 -0.71334,-2.53899 -1.98069,-2.28163 -1.01172,0.20547 -1.28106,1.73839 -1.58832,2.54622 -0.97475,2.56275 -1.96988,5.11688 -2.96125,7.67291 m 4.7625,-8.73125 1.85209,5.02709 h -3.70417 l 1.85208,-5.02709 m 26.19375,4.23334 c 0.92181,4.75337 0.92181,9.26954 0,14.02291 h -5.29166 c 0.65907,-4.89516 0.95144,-9.11661 0,-14.02291 h 5.29166 m 60.32501,3.175 -0.79375,2.11666 0.79375,0.26459 c 0,2.74312 -0.5514,5.27944 2.91041,5.29166 v -0.79375 c -2.42887,-0.18528 -1.85208,-2.63879 -1.85208,-4.49791 h 1.85208 v -0.52917 h -1.85208 v -1.85208 h -1.05833 m -34.66042,0.62306 c 4.06347,-0.6781 5.11863,5.70048 1.05833,6.42575 -4.12882,0.73753 -5.1308,-5.74614 -1.05833,-6.42575 m 22.23558,1.13734 c -3.35809,1.09024 -1.78091,7.30168 1.84018,5.93966 3.30491,-1.24304 1.83012,-7.13121 -1.84018,-5.93966 m 5.28109,0.0917 c 0,2.79154 0.0833,8.18991 4.23333,5.02708 l -0.26458,0.79375 h 1.05833 v -5.82083 h -0.79375 c 0,0.96933 -0.41831,7.22598 -2.7141,4.64368 -0.90672,-1.01989 -0.4609,-3.3741 -0.4609,-4.64368 h -1.05833 m -4.73578,0.65553 c 2.38389,-0.56727 2.83924,3.80683 0.75565,4.41095 -2.34844,0.68088 -2.89851,-3.90104 -0.75565,-4.41095 m -78.07881,3.84239 v 10.31875 c 1.74985,0 4.22119,0.4437 5.81594,-0.3855 2.22493,-1.15702 1.78795,-3.92208 -0.25969,-4.90617 v -0.52917 c 1.6813,-0.84796 1.75789,-3.18111 -0.0116,-4.08186 -1.56882,-0.79854 -3.83657,-0.41605 -5.54461,-0.41605 m 1.32292,4.23333 v -3.175 c 1.14485,0 6.63397,0.98467 3.4004,2.90306 -0.90395,0.53629 -2.388,0.27194 -3.4004,0.27194 m 0,5.02708 c 0,-0.94324 -0.34565,-2.76489 0.27194,-3.54451 2.11523,-2.67071 6.8984,3.00662 2.37368,3.51567 -0.86733,0.0976 -1.77356,0.0288 -2.64562,0.0288 z" id="path4238"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="XNOR-gate-explanation-symbol-text gate-symbol-text">
+                                <span class="XNOR-gate-explanation-symbol-text-span gate-symbol-text-span">XNOR GATE</span>
+                            </div>
+                        </div>
+                        <div class="XNOR-gate-table gate-table">
+                            <table>
+                                <thead>
+                                    <tr><td><b>input 1</b></td><td><b>input 2</b></td><td><b>output</b></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="gates-important-term">
+                        <div class="gates-important-point">
+                            <span class="gates-important-point"><b>NOTE - </b>The NAND and NOR gates are also called universal gates because any digital circuit can be implemented using these gates.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="duality-principal">
+                <div class="duality-principal-heading">
+                    <h1 class="duality-principal-heading-h1">Duality Principle in Boolean Algebra</h1>
+                </div>
+                <div class="duality-principal-explanation">
+                    <div class="duality-principal-explanation-text">
+                        <p class="duality-principal-explanation-text-p">This law explain that replacing the variables doesn't change the value of the Boolean function.The dual of the expression can be achieved by:</p>
+                    </div>
+                    <div class="achieving-duality-principal">
+                        <div class="achieving-duality-principal-point-1">
+                            <p class="achieving-duality-principal-point-1-text"><b>1. </b>Replacing each AND (.) sign with an OR (+) sign.</p>
+                        </div>
+                        <div class="achieving-duality-principal-point-2">
+                            <p class="achieving-duality-principal-point-2-text"><b>2. </b>Replacing each OR (+) sign with an AND (.) sign.</p>
+                        </div>
+                        <div class="achieving-duality-principal-point-3">
+                            <p class="achieving-duality-principal-point-3-text"><b>3. </b>Replacing each variable, such as replacing 1 with 0 and replacing 0 with 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="duality-principal-example">
+                    <div class="duality-principal-example-question">
+                        <div class="duality-principal-question-ques">
+                            <p class="duality-principal-question-ques-p"><b>Q. </b> Find the dual of the following expressions:</p>
+                        </div>
+                        <div class="duality-principal-question-ques-p-1">
+                            <p class="duality-principal-question-ques-p-1-text"><b>(i)</b> A.B+A.C</p>
+                        </div>
+                        <div class="duality-principal-question-ques-p-1">
+                            <p class="duality-principal-question-ques-p-1-text"><b>(ii)</b> x<span class="ques-y-bar">y</span> + <span class="ques-x-bar">x</span>z</p>
+                        </div>
+                    </div>
+                    <div class="duality-principal-example-solution">
+                        <div class="duality-principal-example-solution-answer">
+                            <p>ANS.</p>
+                        </div>
+                        <div class="duality-principal-example-solution-answer-1">
+                            <p><b> (i) </b> (A+B).(A+C) </p>
+                        </div>
+                        <div class="duality-principal-example-solution-answer-1">
+                            <p><b> (ii) </b> (x + <span class="ques-y-bar">y</span>).(<span class="ques-x-bar">x</span> + z) </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="de-morgan">
+            <div class="de-morgan-heading">
+                <div class="de-morgan-heading-head">
+                    <h1 class="de-morgan-heading-h1">De Morgan's Law</h1>
+                </div>
+                <div class="de-morgan-about-morgan">
+                    <p class="de-morgan-about-morgan-text">A famous mathematician De Morgan has suggested two laws which are extremely useful in Boolean Algebra. The rules of De Morgan are produced from the Boolean expressions for OR, AND, NOT.</p>
+                </div>
+            </div>
+            <div class="de-morgan-law">
+                <div class="de-morgan-law-1">
+                    <div class="de-morgan-law-1-text">
+                        <p class="de-morgan-law-1-text-p">The First law states that when two (or more) input varibales are OR'ed and negated, they are equivalent to the AND of the complements of the individual variables.</p>
+                    </div>
+                    <div class="de-morgan-law-1-equation">
+                        <p class="de-morgan-law-1-equation-text"><span style="font-family: sans-serif; text-decoration: overline;">A&plus;B</span> = <span style="font-family: sans-serif; text-decoration: overline;">A</span> . <span style="font-family: sans-serif; text-decoration: overline;">B</span></p>
+                    </div>
+                </div>
+                <div class="de-morgan-law-1">
+                    <div class="de-morgan-law-1-text">
+                        <p class="de-morgan-law-1-text-p">The First law states that when two (or more) input varibales are AND'ed and negated, they are equivalent to the OR of the complements of the individual variables.</p>
+                    </div>
+                    <div class="de-morgan-law-1-equation">
+                        <p class="de-morgan-law-1-equation-text"><span style="font-family: sans-serif; text-decoration: overline;">A.B</span> = <span style="font-family: sans-serif; text-decoration: overline;">A</span> &plus; <span style="font-family: sans-serif; text-decoration: overline;">B</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="form-div">
+            <div class="form-div-intro">
+                <h1>Contact me</h1>
+                <p class="form-text">Any question, problem, suggestion then, type it below and send it.</p>
+            </div>
+            <div class="form-div-from">
+                <form id="sheetdb-form" action ="https://sheetdb.io/api/v1/062ykrea05dnb" method="POST" class="form" autocomplete="off">
+                    <input type="text" name="data[Name]" id="name" required placeholder=" Name"><br>
+                    <input type="email" name="data[Email]" id="email" required placeholder=" Email"><br>
+                    <textarea name="data[Message]" cols="30" rows="10" required placeholder="type your message and send it"></textarea><br>
+                    <input type="hidden" name="data[Hidden]" value="Boolean Logic">
+                    <button type="submit">Send it to Sushant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="copy-right">
+                <p id="footer-para" class="footer-para">
+                    <span id="footer-para-text" class="footer-para-text"></span>
+                    <span id="footer-para-svg" class="footer-para-svg">
+                        <a class="link-to-apple" class="" href="https://www.apple.com/" target="_blank">
+                            <svg class="link-tp-apple-svg" viewBox="219.235 227.818 50.141 59.277" xmlns="http://www.w3.org/2000/svg">
+                                <g class="link-to-apple-svg-g" version="1.0" fill="#fff" stroke="none">
+                                    <path d="M 261.018 284.707 C 257.803 287.828 254.255 287.341 250.874 285.87 C 247.279 284.369 243.993 284.274 240.196 285.87 C 235.468 287.911 232.959 287.318 230.111 284.707 C 214.036 268.157 215.963 242.723 234.679 241.996 C 239.198 242.102 242.213 244.446 244.823 244.63 C 248.703 243.841 252.416 241.581 256.569 241.878 C 261.558 242.281 265.289 244.251 267.78 247.792 C 257.518 253.961 259.95 267.486 269.376 271.283 C 267.49 276.237 265.069 281.13 261.012 284.749 L 261.018 284.707 Z M 244.467 241.819 C 243.987 234.463 249.949 228.412 256.806 227.818 C 257.75 236.302 249.094 242.649 244.467 241.819 Z" id="path2"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/komal_booelan.js"></script>
+</body>
+
+</html>

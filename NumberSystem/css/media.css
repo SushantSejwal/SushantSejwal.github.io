@@ -1,0 +1,434 @@
+@media only screen and (max-width:850px) {
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .example-for-ds-to-oc-solution-img img {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .ds-to-bn-example-1-solution-img-span {
+        padding: 0px;
+    }
+
+    .ds-to-bn-example-1-solution-img-span img {
+        border-radius: 25px;
+        max-width: 100%;
+    }
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:710px) {
+
+    .table-for-binary-and-hexadecimal-values-on-small-screens {
+        display: block;
+    }
+
+    .table-for-binary-and-hexadecimal-values-on-wider-screens {
+        display: none;
+    }
+
+    .table-for-binary-and-hexadecimal-values-on-small-screens table {
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width:711px) {
+
+    .table-for-binary-and-hexadecimal-values-on-small-screens {
+        display: none;
+    }
+
+    .table-for-binary-and-hexadecimal-values-on-wider-screens {
+        display: grid;
+    }
+
+}
+
+@media only screen and (max-width:630px) {
+    .obtob-bs-to-hs-method-method-1-heading {
+        text-align: center;
+    }
+
+    .obtob-bs-to-hs-method-method-2-heading {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:899px) {
+
+    .hstbs-hexadecimal-to-binary-example-normal-solution-text p {
+        padding-bottom: 25px;
+    }
+
+    .hstbs-hexadecimal-to-binary-example-fraction-solution-text p {
+        padding-bottom: 25px;
+    }
+}
+
+
+@media only screen and (min-width:786px) {
+
+    .example-for-hexa-to-octal {
+        padding: 10px 40px;
+    }
+
+    .question-of-example-for-hexa-to-octal p,
+    .question-for-example-for-octal-to-hexa p {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .question-of-example-for-octal-to-hexa p,
+    .question-of-example-for-hexa-to-octal p,
+    .bstos-bs-to-os-method-method-1-example-fraction-question-p,
+    .bstos-bs-to-os-method-method-1-example-normal-question-p,
+    .bstos-bs-to-os-method-method-1-example-fraction-question-p,
+    .bstos-bs-to-os-method-method-1-example-normal-question-p,
+    .obtob-bs-to-hs-method-method-1-example-fraction-question-p,
+    .obtob-bs-to-hs-method-method-1-example-normal-question-p {
+        font-size: 18px;
+    }
+
+    /* For display flex screen size less thn 451px */
+
+    .solution-of-question-of-example-for-hexa-to-octal-step-1-table-2,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-2,
+    .solution-of-question-of-example-for-hexa-to-octal-step-3-table-2,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-text-row,
+    .solution-of-question-of-example-for-octal-to-hexa-step-1-table-2,
+    .hstbs-hexadecimal-to-binary-example-fraction-solution-table-1,
+    .hstbs-hexadecimal-to-binary-example-normal-solution-table-2 {
+        display: flex;
+    }
+
+    /* For display none screen size less thn 451px */
+
+    .solution-of-question-of-example-for-hexa-to-octal-step-1-table-1,
+    .solution-of-question-of-example-for-hexa-to-octal-step-3-table-1,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-1,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-text,
+    .solution-of-question-of-example-for-octal-to-hexa-step-1-table-1,
+    .hstbs-hexadecimal-to-binary-example-fraction-solution-table,
+    .hstbs-hexadecimal-to-binary-example-normal-solution-table-1 {
+        display: none;
+    }
+
+    /* For table centering in screen size less thn 451px */
+
+    .solution-of-question-of-example-for-hexa-to-octal-step-3-table-2 table,
+    .solution-of-question-of-example-for-hexa-to-octal-step-1-table-2 table,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-2 table,
+    .solution-of-question-of-example-for-octal-to-hexa-step-1-table-2 table,
+    table {
+        margin: auto;
+    }
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 96%;
+    }
+
+    .number-system-heading {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width:416px) {
+
+    .number-system-heading {
+        font-size: 45px;
+    }
+
+}
+
+@media only screen and (max-width:376px) {
+
+    .number-system-heading {
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width:358px) {
+
+    .number-system-heading {
+        font-size: 35px;
+    }
+
+}
+
+
+@media only screen and (min-width:451px) {
+
+    /* For display flex screen size larger thn 450px */
+
+    .solution-of-question-of-example-for-hexa-to-octal-step-1-table-1,
+    .solution-of-question-of-example-for-hexa-to-octal-step-3-table-1,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-1,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-text,
+    .solution-of-question-of-example-for-octal-to-hexa-step-1-table-1,
+    .hstbs-hexadecimal-to-binary-example-fraction-solution-table,
+    .hstbs-hexadecimal-to-binary-example-normal-solution-table-1 {
+        display: flex;
+    }
+
+    /* For display none screen size larger thn 450px */
+
+    .solution-of-question-of-example-for-hexa-to-octal-step-1-table-2,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-2,
+    .solution-of-question-of-example-for-hexa-to-octal-step-3-table-2,
+    .solution-of-question-of-example-for-octal-to-hexa-step-3-table-text-row,
+    .solution-of-question-of-example-for-octal-to-hexa-step-1-table-2,
+    .hstbs-hexadecimal-to-binary-example-fraction-solution-table-1,
+    .hstbs-hexadecimal-to-binary-example-normal-solution-table-2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:514px) {
+
+    /* flex  */
+
+    .os-position-value-table-1,
+    .ds-position-table-1-1,
+    .ds-position-table-2-table-1,
+    .bs-positional-value-table-1,
+    .divider {
+        display: flex;
+    }
+
+    /* none */
+
+    .os-position-value-table,
+    .ds-position-table-1,
+    .ds-position-table-2-table,
+    .bs-positional-value-table {
+        display: none;
+    }
+
+    /* table centre */
+
+    table {
+        margin: auto;
+    }
+
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 93%;
+    }
+
+}
+
+@media only screen and (min-width:515px) {
+
+    /* flex  */
+
+    .os-position-value-table,
+    .ds-position-table-1,
+    .ds-position-table-2-table,
+    .bs-positional-value-table {
+        display: flex;
+    }
+
+    /* none */
+
+    .os-position-value-table-1,
+    .ds-position-table-1-1,
+    .ds-position-table-2-table-1,
+    .bs-positional-value-table-1,
+    .divider {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-2-solution-img-span img,
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-1-solution-img-span img,
+    .example-for-ds-to-oc-solution-img img,
+    .example-for-ds-to-oc-solution-img-fr img,
+    .example-for-conversion-ds-to-hs-solution-img img,
+    .example-for-conversion-ds-to-hs-solution-img-fr img {
+        max-width: 80%;
+    }
+
+    .ds-to-bn-example-1-solution-img-span img {
+        max-width: 100%;
+    }
+
+    .solution-for-binary-to-decimal-normal-example-image img,
+    .solution-for-binary-to-decimal-fraction-example-image img,
+    .solution-for-octal-to-decimal-fraction-example-image img,
+    .solution-for-octal-to-decimal-normal-example-image img {
+        max-width: 65%;
+    }
+
+}
+
+@media only screen and (min-width:900px) {
+
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-2-solution-img-span img,
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-1-solution-img-span img,
+    .example-for-ds-to-oc-solution-img img,
+    .example-for-ds-to-oc-solution-img-fr img,
+    .example-for-conversion-ds-to-hs-solution-img img,
+    .example-for-conversion-ds-to-hs-solution-img-fr img {
+        max-width: 70%;
+    }
+
+    .ds-to-bn-example-1-solution-img-span img {
+        max-width: 90%;
+    }
+
+    .form-div {
+        max-width: 80%;
+        margin: 50px auto 20px auto;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+
+    .example-for-octal-to-hexa,
+    .example-for-hexa-to-octal,
+    .obtob-bs-to-hs-method-method-1-example-fraction,
+    .obtob-bs-to-hs-method-method-1-example-normal,
+    .hexadecimal-to-decimal-normal-example,
+    .hexadecimal-to-decimal-fraction-example,
+    .octal-to-decimal-fraction-example,
+    .octal-to-decimal-normal-example,
+    .binary-to-decimal-fraction-example,
+    .binary-to-decimal-normal-example,
+    .example-for-conversion-ds-to-hs-fr,
+    .solution-for-octal-to-decimal-normal-example-image,
+    .example-for-conversion-ds-to-hs,
+    .example-for-ds-to-oc-fr,
+    .example-for-ds-to-oc,
+    .ds-to-bn-example-1,
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-1,
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-2 {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .obtob-bs-to-hs-method-method-1-example-fraction,
+    .obtob-bs-to-hs-method-method-1-example-normal {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+}
+
+@media only screen and (min-width:851px) {
+
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-1,
+    .examples-for-ds-to-os-decimal-to-binary-explanation-text-steps-2 {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (min-width:700px) {
+
+    .bstos-bs-to-os-method-method-1-example-normal,
+    .bstos-bs-to-os-method-method-1-example-fraction,
+    .hstbs-hexadecimal-to-binary-example-normal,
+    .hstbs-hexadecimal-to-binary-example-fraction {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+
+    .bstos-bs-to-os-method-method-1-example-fraction{
+        margin-top: 25px;
+    }
+
+}
+
+@media only screen and (min-width:901px) {
+
+    .hstbs-hexadecimal-to-binary-example-normal,
+    .hstbs-hexadecimal-to-binary-example-fraction,
+    .bstos-bs-to-os-method-method-1-example-normal,
+    .bstos-bs-to-os-method-method-1-example-fraction {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+}
+
+@media only screen and (max-width:432px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 20px;
+    }
+
+    .footer-para-text {
+        margin: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width:412px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 15px;
+    }
+
+    .footer-para-text {
+        margin: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width:392px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 10px;
+    }
+
+    .footer-para-text {
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width:372px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 5px;
+        width: 14px;
+    }
+
+    .footer-para-text {
+        margin: 0px 5px;
+        font-size: 14px;
+    }
+
+}

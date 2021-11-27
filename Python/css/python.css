@@ -1,0 +1,383 @@
+/* Under Construction */
+
+.under-construction {
+    height: auto;
+    max-width: 1920px;
+    margin: 50.8px auto 0px auto;
+    padding-bottom: 30px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    background-color: #FCFDFB;
+}
+
+.under-const-grid,
+.under-const {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.under-const-heading h1 {
+    font-size: 3rem;
+    font-family: "SFPro-Semibold";
+    word-wrap: break-word;
+}
+
+.under-const-img img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* other stuff */
+
+.other-stuff {
+    max-width: 1920px;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+    min-width: 300px;
+    background-color: #f3f3f3;
+}
+
+.other-music {
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+}
+
+.audio-text-span {
+    padding: 35px 25px 25px 25px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: "SF-medium";
+}
+
+.audio-img {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.audio-img-text-span {
+    display: block;
+    font-size: 20px;
+    padding: 3px 5px 5px 5px;
+}
+
+.ferrari-img {
+    width: 650px;
+    max-width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    box-shadow: 10px 10px 25px rgb(20, 20, 20);
+}
+
+.ferrari-img:active {
+    transform: scale(99%);
+    box-shadow: 10px 10px 12.5px rgb(20, 20, 20);
+    transition: .1s ease-in-out;
+}
+
+.audio-file,
+.anitek-audio {
+    width: 0px;
+    height: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    min-width: 0px;
+    min-height: 0px;
+}
+/* RR */
+
+.audio-img-rr {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 40px 0px 0px 0px;
+}
+
+.audio-img-text-span-rr {
+    display: block;
+    font-size: 20px;
+    padding: 3px 5px 5px 5px;
+}
+
+.rr-img {
+    width: 650px;
+    max-width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    box-shadow: 10px 10px 25px rgb(20, 20, 20);
+}
+
+.rr-img:active {
+    transform: scale(99%);
+    box-shadow: 10px 10px 12.5px rgb(20, 20, 20);
+    transition: .1s ease-in-out;
+}
+
+.audio-file-rr,
+.rr-audio {
+    width: 0px;
+    height: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+/* RR */
+
+.rolls-royce-or-text {
+    display: block;
+    padding: 90px 40px 40px 40px;
+    font-family: "SF-medium";
+    text-align: center;
+}
+
+.rolls-royce-or-para {
+    font-size: 30px;
+    font-family: "SF-bold";
+    padding: 20px 20px 0px 20px;
+    display: block;
+}
+
+.rolls-royce-or-text-img img {
+    height: 90px;
+    pointer-events: none;
+    display: block;
+    margin: auto;
+}
+
+.rolls-royce-background {
+    background-image: url("../images/RR/Untitled.jpg");
+    background-size: cover;
+    /* max-height: 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media only screen and (min-width:1921px) {
+    .rolls-royce-background {
+        background-size: 1920px;
+        min-height: 1081px;
+    }
+}
+@media only screen and (max-width:1920px) {
+    .rolls-royce-background {
+        background-size: 1920px;
+        min-height: 1080px;
+    }
+}
+
+@media only screen and (max-width:1800px) {
+    .rolls-royce-background {
+        background-size: 1800px;
+        min-height: 1012.5px;
+    }
+}
+
+@media only screen and (max-width:1700px) {
+    .rolls-royce-background {
+        background-size: 1700px;
+        min-height: 956.25px;
+    }
+}
+
+@media only screen and (max-width:1600x) {
+    .rolls-royce-background {
+        background-size: 1600px;
+        min-height: 900px;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    .rolls-royce-background {
+        background-size: 1500px;
+        min-height: 843.75px;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .rolls-royce-background {
+        background-size: 1400px;
+        min-height: 787.5px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .rolls-royce-background {
+        background-size: 1300px;
+        min-height: 731.25px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .rolls-royce-background {
+        background-size: 1200px;
+        min-height: 675.0px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .rolls-royce-background {
+        background-size: 1100px;
+        min-height: 618.75px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .rolls-royce-background {
+        background-size: 1000px;
+        min-height: 562.5px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .rolls-royce-background {
+        background-size: 900px;
+        min-height: 506.25px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .rolls-royce-background {
+        background-size: 800px;
+        min-height: 450px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .rolls-royce-background {
+        background-size: 700px;
+        min-height: 393.75px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .rolls-royce-background {
+        background-size: 600px;
+        min-height: 337.5px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .rolls-royce-background {
+        background-size: 500px;
+        min-height: 281.25px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .rolls-royce-background {
+        background-size: 400px;
+        min-height: 225px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .rolls-royce-background {
+        background-size: 300px;
+        min-height: 168.75px;
+    }
+}
+
+/* RR facts */
+
+.fact-about-rolls-royce {
+    max-width: 990px;
+    margin: auto;
+    /* padding-bottom: 20px; */
+}
+
+.rr-fact {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px 20px;
+    margin: 20px 20px 0px 20px;
+    box-shadow: 5px 5px 20px rgb(160, 160, 160);
+}
+
+.rr-fact-starting {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0px 20px 20px 20px;
+}
+
+.rr-fact-heading {
+    padding: 40px;
+    font-size: 35px;
+    font-family: "SF-bold";
+}
+
+.rr-fact-img {
+    padding: 20px;
+}
+
+.rr-fact-img img {
+    border-radius: 10px;
+    width: 700px;
+    max-width: 100%;
+}
+
+.rr-fact-explain {
+    padding: 30px 20px 20px 20px;
+    font-family: "SF-text-regular";
+    font-size: 17px;
+}
+
+.iframe-container {
+    padding: 0% 12% 12% 12%;
+}
+
+.iframe {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+}
+
+.iframe video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .iframe-container {
+        padding: 0% 8% 8% 8%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .iframe-container {
+        padding: 0% 5% 5% 5%;
+    }
+
+}
+
+.rr-fact-ending{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    margin: 20px 20px 0px 20px;
+    box-shadow: 5px 5px 20px rgb(160, 160, 160);
+}

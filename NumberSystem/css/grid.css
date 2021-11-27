@@ -1,0 +1,82 @@
+.examples-for-ds-to-os-decimal-to-binary-explanation-text-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    row-gap: 25px;
+    column-gap: 25px;
+    margin: 30px 0px 20px 0px;
+    padding: 10px;
+}
+
+.table-for-binary-and-hexadecimal-values-on-wider-screens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+@media only screen and (min-width:1000px) {
+
+    .obtob-bs-to-hs-method-method-1-example {
+        /* padding: 10px; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 10px 0px 15px 0px;
+    }
+
+
+    .obtob-bs-to-hs-method-method-1-example {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 20px 8px 25px 8px;
+    }
+
+}
+
+@media only screen and (min-width:900px) {
+
+    .hstbs-hexadecimal-to-binary-example {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .bstos-bs-to-os-method-method-1-example {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 20px 0px 15px 0px;
+    }
+
+    .bstos-bs-to-os-method-method-1-example-normal,
+    .bstos-bs-to-os-method-method-1-example-fraction {
+        height: 100%;
+    }
+
+    .bstos-bs-to-os-method-method-1-example-normal {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .bstos-bs-to-os-method-method-1-example-fraction {
+        margin: 20px 0px 10px 0px;
+    }
+
+}

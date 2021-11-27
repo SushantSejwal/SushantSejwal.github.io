@@ -1,0 +1,813 @@
+/* ====================================================== FONTS ENDS ====================================================== */
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+b {
+    font-family: "SFPro-Semibold";
+    color: #000;
+}
+
+p {
+    color: #313131;
+}
+
+table tr,
+table td {
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+    text-align: center;
+    box-shadow: 3px 3px 6px #575757;
+}
+
+/* ========================================================= Boolean Logic Section ========================================================= */
+
+/* Introduction section */
+
+.boolean-section {
+    margin: 50px auto 0px auto;
+    max-width: 1920px;
+    min-height: 100vh;
+    max-height: auto;
+    background-color: #CBF3F0;
+}
+
+.booelan-section-heading {
+    background-color: #202238;
+    font-family: "SF-Black";
+    text-align: center;
+    max-height: auto;
+}
+
+.booelan-section-heading-text-h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    padding: 40px 20px 0px 20px;
+    font-family: "SF-Black";
+}
+
+@media only screen and (max-width:355px) {
+    .booelan-section-heading-text-h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:270px) {
+    .booelan-section-heading-text-h1 {
+        font-size: 3rem;
+    }
+}
+
+.booelan-section-heading-img {
+    padding: 40px 20px 20px 20px;
+    max-width: 95%;
+    pointer-events: none;
+}
+
+.booelan-section-heading-img::selection {
+    background-color: transparent;
+}
+
+/* ============================= Boolean Logic Terms ============================= */
+
+.boolean-logic-terms {
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+/* Boolean Variable */
+
+.boolean-variable {
+    padding: 10px 5px;
+    margin: 5px 0px;
+}
+
+.boolean-variable-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    padding: 10px 0px;
+    background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boolean-variable-text-p {
+    font-size: 18px;
+}
+
+/* Boolean Constant */
+
+.boolean-constant {
+    padding: 10px 5px;
+    margin: 5px 0px;
+}
+
+.boolean-constant-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    padding: 10px 0px;
+    background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boolean-constant-text-p {
+    font-size: 18px;
+}
+
+.boolean-statement-text-p,
+.boolean-expression-text-p {
+    font-size: 18px;
+    margin: 4px 0px;
+}
+
+/* Boolean Operator */
+
+.boolean-operators {
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+}
+
+.boolean-operators table tr,
+.boolean-operators table td {
+    box-shadow: 0px 2px 3px #fa82b8;
+}
+
+.boolean-operators-head {
+    background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    padding: 25px 0px;
+}
+
+.boolean-operators-heading-h1 {
+    font-size: 3.1rem;
+    font-family: "SF-Heavy";
+    text-align: center;
+    padding: 25px 20px 5px 20px;
+    color: white;
+}
+
+.boolean-operators-define-p {
+    text-align: center;
+    font-size: 21px;
+    padding: 5px 15px 30px 15px;
+    color: white;
+}
+
+/* AND operator */
+
+.AND-operator {
+    margin: 0px 0px 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.AND-operator-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0px 5px 0px;
+}
+
+.AND-operator-define-text-p {
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.AND-operator-define-example {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.AND-operator-define-example-text-p,
+.AND-operator-define-example-table-text-p {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+
+.AND-operator-table {
+    padding: 5px 20px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .AND-operator-table {
+        margin: auto;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+}
+
+/* OR operator */
+
+.OR-operator {
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.OR-operator-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0px 5px 0px;
+}
+
+.OR-operator-define-text-p {
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.OR-operator-define-example {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.OR-operator-define-example-text-p,
+.OR-operator-define-example-table-text-p {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+
+.OR-operator-table {
+    padding: 5px 20px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .OR-operator-table {
+        margin: auto;
+    }
+
+}
+
+/* NOT operator */
+
+.NOT-operator {
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.NOT-operator-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0px 5px 0px;
+}
+
+.NOT-operator-define-text-p {
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.NOT-operator-define-example {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.NOT-operator-define-example-text-p,
+.NOT-operator-define-example-table-text-p {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+
+.NOT-operator-table {
+    padding: 5px 20px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .NOT-operator-table {
+        margin: auto;
+    }
+
+}
+
+.not-bar {
+    text-decoration: overline;
+}
+
+/* truth table */
+
+.truth-table {
+    background-color: #fff;
+    margin: 10px 0px 0px 0px;
+}
+
+.truth-table-heading {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    padding: 20px;
+}
+
+.truth-table-heading-h1 {
+    font-size: 3.1rem;
+    font-family: "SF-Heavy";
+    text-align: center;
+    padding: 25px 5px 5px 5px;
+}
+
+.truth-table-defination-p {
+    font-size: 22px;
+    padding: 5px 8px 25px 8px;
+}
+
+/* reprentation */
+
+.representation-of-combinations-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    padding: 25px 15px 15px 15px;
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.no-of-row-in-truth-table-p {
+    margin: 10px 15px;
+    font-size: 18px;
+}
+
+.representation-of-combinations-example {
+    padding: 10px 20px;
+}
+
+.representation-of-combinations-example table {
+    padding: 10px 20px 10px 20px;
+}
+
+@media only screen and (max-width:400px) {
+
+    .representation-of-combinations-example table {
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+.representation-of-combinations-example table tr,
+.representation-of-combinations-example table td {
+    box-shadow: 0px 2px 3px #2697b1;
+}
+
+.representation-of-combinations-example p {
+    font-size: 18px;
+}
+
+/* truth table example */
+
+.truth-table-example-question-p {
+    padding: 20px 0px;
+}
+
+.truth-table-example-question-p b {
+    font-size: 22px;
+    font-family: "SFPro-Semibold" ;
+    color: #000;
+}
+
+.truth-table-example-text {
+    padding: 5px;
+}
+
+p.precedence-for-solving-operators-heading-text {
+    font-family: "SFPro-Semibold" ;
+    padding: 15px 0px;
+    font-size: 23px;
+    font-weight: 900;
+    color: #000;
+}
+
+p.precedence-for-solving-operators-steps-summary-text {
+    padding: 8px 0px;
+    color: #141414;
+}
+
+p.precedence-for-solving-expression-heading-text {
+    font-family: "SF-Semibold";
+    padding: 15px 0px;
+    font-size: 23px;
+    font-weight: 900;
+    color: #000;
+}
+
+/* Logic Circuit */
+
+.logic-gate {
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+}
+
+.logic-gate-intro {
+    background-image: radial-gradient(circle farthest-corner at 2.9% 7.7%, rgba(164, 14, 176, 1) 0%, rgba(254, 101, 101, 1) 90%);
+    padding: 20px 0px;
+}
+
+.logic-gate-heading-h1 {
+    font-size: 3.1rem;
+    font-family: "SF-Heavy";
+    text-align: center;
+    padding: 25px 5px 5px 5px;
+    color: white;
+}
+
+.logic-gate-defination-text {
+    text-align: center;
+    font-size: 21px;
+    padding: 15px 15px 30px 15px;
+    color: white;
+}
+
+/* gate-type */
+
+.gate-type {
+    padding: 20px 15px;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+
+.AND-gate.gate-type {
+    margin: 0px 0px 20px 0px;
+}
+
+.gate-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    padding: 15px 15px 25px 15px;
+    background-image: radial-gradient(circle farthest-corner at 2.9% 7.7%, rgba(164, 14, 176, 1) 0%, rgba(254, 101, 101, 1) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gate-explain-p {
+    font-size: 18px;
+    padding: 10px 0px 20px 0px;
+}
+
+.gate-symbol-text-span {
+    text-align: center;
+    display: block;
+    padding: 10px 10px 22px 10px;
+    font-family: "SFPro-Semibold" ;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:769px) {
+
+    .gate-symbol {
+        width: 350px;
+        max-width: 100%;
+        min-width: auto;
+        margin: 0px 25px;
+    }
+
+    .gate-symbol-text-span {
+        text-align: center;
+        display: block;
+        padding: 10px 10px 22px 10px;
+        font-family: "SFPro-Semibold" ;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .gate-symbol {
+        max-width: 50%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .gate-symbol {
+        max-width: 60%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .gate-symbol {
+        max-width: 70%;
+        margin: 0px auto;
+    }
+}
+
+.gate-table {
+    margin: 10px 30px;
+}
+
+.gate-table table tr,
+.gate-table table td {
+    box-shadow: 0px 2px 3px rgba(254, 101, 101, 1);
+}
+
+/* NOR and NAND */
+
+.gates-important-point {
+    padding: 15px 0px 5px 0px;
+}
+
+.gates-important-point b {
+    font-size: 20px;
+}
+
+.gates-important-point {
+    font-size: 18px;
+}
+
+.ques-y-bar,
+.ques-x-bar {
+    font-family: sans-serif;
+    text-decoration: overline;
+}
+
+/* duality */
+
+.duality-principal {
+    padding: 20px 15px;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+
+.duality-principal-heading-h1 {
+    font-size: 2.1rem;
+    font-family: "SF-Medium";
+    padding: 15px 15px 25px 15px;
+    background-image: radial-gradient(circle farthest-corner at 2.9% 7.7%, rgba(164, 14, 176, 1) 0%, rgba(254, 101, 101, 1) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.duality-principal-explanation-text-p {
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+.achieving-duality-principal p {
+    font-size: 18px;
+    padding: 2px 0px 2px 0px;
+}
+
+.duality-principal-example {
+    padding: 20px 0px 0px 0px;
+    font-size: 18px;
+}
+
+.duality-principal-question-ques-p {
+    padding: 0px 5px;
+    font-size: 20px;
+}
+
+.duality-principal-question-ques-p-1 {
+    padding: 3px 10px;
+}
+
+.duality-principal-example-solution {
+    padding: 10px 5px 0px 5px;
+    font-size: 18px;
+    color: #0167CC;
+}
+
+.duality-principal-example-solution-answer p {
+    color: #0167CC;
+}
+
+.duality-principal-example-solution-answer-1 {
+    padding: 2px 10px;
+    color: #0167CC;
+}
+
+.duality-principal-example-solution-answer-1 p,
+.duality-principal-example-solution-answer-1 p b {
+    color: #0167CC;
+}
+
+/* de morgan law */
+
+.de-morgan {
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+}
+
+.de-morgan-heading {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+    padding: 20px 15px;
+}
+
+.de-morgan-heading-h1 {
+    font-size: 3.1rem;
+    font-family: "SF-Heavy";
+    text-align: center;
+    padding: 25px 0px 5px 0px;
+    color: white;
+}
+
+@media only screen and (max-width:450px) {
+    .de-morgan-heading-h1 {
+        font-size: 2.9rem;
+    }
+}
+
+.de-morgan-about-morgan-text {
+    font-size: 20px;
+    padding: 10px 20px 20px 20px;
+    color: #fff;
+}
+
+.de-morgan-law {
+    background-color: #fff;
+    padding: 20px 10px;
+}
+
+.de-morgan-law-1-text-p {
+    font-size: 19px;
+    padding: 10px 5px;
+}
+
+.de-morgan-law-1-equation-text,
+.de-morgan-law-1-equation-text span {
+    font-size: 19px;
+    padding: 0px 20px;
+    font-weight: 900;
+}
+
+/* contact Sushant */
+
+.form-section{
+    max-width: 1920px;
+    min-width: auto;
+    margin: auto;
+}
+
+.form-div {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    margin: 5px 20px 20px 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form-div .form {
+    padding: 20px;
+}
+
+.form-div .form input,
+textarea::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.form-div .form input[type=text] {
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: "SFPro-Semibold" ;
+
+}
+
+.form-div .form input[type=email] {
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: "SFPro-Semibold" ;
+}
+
+.form-div .form textarea {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    display: block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    resize: none;
+    font-size: 16px;
+    font-family: "SFPro-Semibold" ;
+}
+
+.form-div .form textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.form-div .form button {
+    margin: auto;
+    display: block;
+    padding: 7px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 15px;
+    font-family: "SFPro-Semibold" ;
+    cursor: pointer;
+}
+
+.form-div .form button:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.form-div .form input[type=submit]:active {
+    background-color: white;
+    color: black;
+}
+
+/* heading */
+
+.form-div-intro h1 {
+    font-family: "SF-round-bold" ;
+    text-transform: capitalize;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+
+.form-text{
+    font-family: "SF-text-regular" ;
+    color: rgb(247, 247, 247);
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 96%;
+    }
+
+    .form-text{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:514px) {
+
+    .form-div .form input[type=text],
+    .form-div .form input[type=email],
+    .form-div .form textarea {
+        width: 93%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+
+    .form-div {
+        max-width: 80%;
+        margin: 10px auto 20px auto;
+    }
+}

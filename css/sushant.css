@@ -1,0 +1,563 @@
+/* body and pseudo elements */
+
+body {
+    min-width: 340px;
+    margin: auto;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ==================== Sushant section ==================== */
+
+.section-sushant {
+    margin: auto auto auto auto;
+    max-width: 1900px;
+}
+
+/* ========= Number System ========= */
+/* container */
+
+.number-system {
+    padding: 10px 40px;
+    margin: 64px 15px 10px 15px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, rgb(226, 214, 226) 100%);
+}
+
+/* heading */
+
+.number-system-heading a {
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+}
+
+.number-system-heading a h1 {
+    text-align: center;
+    font-family: "SF-black";
+    font-size: 50px;
+    margin: 30px 40px 15px 40px;
+}
+
+@media screen and (max-width:400px) {
+    .number-system-heading a h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .number-system-heading a h1 {
+        font-size: 35px;
+    }
+}
+
+/* text */
+
+.number-system-text a {
+    text-decoration: none;
+    color: rgb(44, 42, 42);
+}
+
+.number-system-text a p {
+    text-align: center;
+    font-family: "SFPro-Regular" ;
+    font-size: 24px;
+    margin: 15px 40px;
+}
+
+@media screen and (max-width:400px) {
+    .number-system-text a p {
+        font-size: 18px;
+    }
+}
+
+/* anchor */
+
+.number-system-anchor a {
+    text-decoration: none;
+    color: #0066cc;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin: 15px 40px;
+}
+
+.number-system-anchor a .anchor-span-text:hover {
+    text-decoration: underline;
+}
+
+/* img */
+
+.number-system-img {
+    text-align: center;
+}
+
+.number-system-img a img {
+    max-width: 700px;
+    text-align: center;
+    margin: auto auto 30px auto;
+    transform: scale(100%);
+    transition: all .15s ease-in-out;
+}
+
+.number-system-img a img:hover {
+    transform: scale(99%);
+}
+
+@media screen and (max-width:900px) {
+    .number-system-img a img {
+        width: 80%;
+    }
+}
+
+/* ================================= starting section ================================= */
+
+.sushant-section-container {
+    padding: 40px 50px 25px 50px;
+}
+
+.sushant-section {
+    margin: 54px auto auto auto;
+    max-width: 1900px;
+}
+
+.sushant-image {
+    text-align: center;
+}
+
+@media only screen and (max-width:500px) {
+
+    .sushant-image img {
+        width: 80%;
+    }
+}
+
+.sushant-image img {
+    display: block;
+    margin: auto;
+    max-width: 320px;
+    border-radius: 2222px;
+    box-shadow: 0px 2px 15px rgb(94, 89, 89);
+    pointer-events: none;
+}
+
+.sushant-awesome {
+    text-align: center;
+    color: rgb(44, 42, 42);
+    font-family: "SFPro-Regular" ;
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:408px) {
+    .sushant-awesome {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .sushant-awesome {
+        font-size: 18px;
+    }
+
+    .python-emoji {
+        display: none;
+    }
+}
+
+.sushant-sejwal {
+    text-align: center;
+}
+
+.sushant-sejwal h1 {
+    font-family: "SF-black" ;
+    font-size: 70px;
+    color: rgb(29, 28, 28);
+}
+
+@media only screen and (max-width:650px) {
+
+    .sushant-sejwal h1 {
+        font-size: 60px;
+    }
+
+}
+
+/* ================================= python section ================================= */
+
+.sushant-section-python {
+    margin: auto;
+    max-width: 1900px;
+}
+
+.sushant-python-container {
+    background: linear-gradient(225deg, hsla(0, 0%, 25%, 1) 0%, hsla(0, 0%, 24%, 1) 25%, hsla(0, 0%, 18%, 1) 50%, hsla(0, 1%, 18%, 1) 75%, hsla(0, 0%, 22%, 1) 100%);
+    margin: 15px;
+    border-radius: 15px;
+    /* min-height: 100vh; */
+    max-height: auto;
+    display: grid;
+    align-items: center;
+}
+
+.sushant-python-heading {
+    text-align: center;
+}
+
+.sushant-python-heading a {
+    text-decoration: none;
+    color: rgb(240, 230, 230);
+}
+
+.sushant-python-heading a h1 {
+    text-align: center;
+    font-family: "SF-black" ;
+    font-size: 50px;
+    padding: 50px 40px 10px 40px;
+}
+
+@media only screen and (max-width:400px) {
+    .sushant-python-heading a h1 {
+        font-size: 40px;
+    }
+}
+
+.sushant-python-text {
+    text-align: center;
+}
+
+.sushant-python-text a {
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+}
+
+.sushant-python-text a P {
+    text-align: center;
+    font-family: "SFPro-Regular" ;
+    font-size: 22px;
+    margin: 15px 30px;
+}
+
+.sushant-python-anchor {
+    text-align: center;
+    padding: 20px;
+}
+
+.sushant-python-anchor a {
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    font-size: 20px;
+    font-family: "SFPro-Regular" ;
+
+}
+
+.python-anchor-span-text:hover {
+    text-decoration: underline;
+}
+
+.sushant-python-img {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+.sushant-python-img img {
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #00070A;
+    transform: scale(100%);
+    transition: all .15s ease-in-out;
+}
+
+.sushant-python-img img:hover {
+    transform: scale(99%);
+    box-shadow: 0px 0px 20px #00070A;
+    transition: all .17s ease-in-out;
+}
+
+@media only screen and (max-width:900px) {
+    .sushant-python-img img {
+        max-width: 80%;
+    }
+}
+
+/* =============================== Boolean =============================== */
+
+.boolean-logic-section {
+    margin: auto;
+    max-width: 1900px;
+}
+
+.boolean-logic {
+    background: linear-gradient(90deg, #000329 0%, #00458f 100%);
+    margin: 15px;
+    border-radius: 15px;
+}
+
+/* heading */
+
+.boolean-logic-heading {
+    text-align: center;
+}
+
+.boolean-logic-heading a {
+    text-decoration: none;
+    color: rgb(240, 230, 230);
+}
+
+.boolean-logic-heading a h1 {
+    font-size: 50px;
+    font-family: "SF-black" ;
+    padding: 50px 40px 10px 40px;
+}
+
+@media only screen and (max-width:400px) {
+    .boolean-logic-heading a h1 {
+        font-size: 40px;
+    }
+}
+
+/* text */
+
+.boolean-logic-text {
+    text-align: center;
+}
+
+.boolean-logic-text a {
+    text-decoration: none;
+    color: rgb(240, 230, 230);
+}
+
+.boolean-logic-text a p {
+    font-size: 22px;
+    font-family: "SFPro-Regular" ;
+    padding: 15px 30px;
+}
+
+/* anchor */
+
+.boolean-logic-anchor {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.boolean-logic-anchor a {
+    text-decoration: none;
+    color: rgb(240, 230, 230);
+    font-size: 20px;
+}
+
+.boolean-logic-anchor .boolean-anchor-span-text:hover {
+    text-decoration: underline;
+}
+
+/* img */
+
+.boolean-logic-img {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+.boolean-logic-img img {
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #070a0a;
+    transition: all .17s ease-in-out;
+    transform: scale(100%);
+}
+
+.boolean-logic-img img:hover {
+    box-shadow: 0px 0px 20px #0d1111;
+    transform: scale(99%);
+    transition: all .15s ease-in-out;
+}
+
+@media only screen and (max-width:900px) {
+    .boolean-logic-img img {
+        max-width: 80%;
+    }
+}
+
+/* =============================== Footer =============================== */
+
+.footer {
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-para {
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-para-text {
+    margin: 0px 25px;
+}
+
+/* link to apple */
+
+.link-tp-apple-svg {
+    width: 15px;
+    margin: 0px 25px;
+}
+
+.link-to-apple-svg-g {
+    fill: #dadada;
+}
+
+.link-to-apple-svg-g.apple_sushant {
+    fill: #ffffff;
+}
+
+.footer-para-svg {
+    border-left: 1px solid rgb(230, 230, 230);
+}
+
+@media only screen and (max-width:432px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 20px;
+    }
+
+    .footer-para-text {
+        margin: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width:412px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 15px;
+    }
+
+    .footer-para-text {
+        margin: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width:392px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 10px;
+    }
+
+    .footer-para-text {
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width:372px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 5px;
+        width: 14px;
+    }
+
+    .footer-para-text {
+        margin: 0px 5px;
+        font-size: 14px;
+    }
+
+}
+
+/* ================================= steve section ================================= */
+
+.sushant-section-steve {
+    margin: auto;
+    max-width: 1900px;
+}
+
+.sushant-steve-container {
+    background: linear-gradient(135deg, hsla(97, 63%, 66%, 1) 0%, hsla(96, 42%, 52%, 1) 25%, hsla(95, 42%, 53%, 1) 50%, hsla(93, 51%, 37%, 1) 75%, hsla(92, 67%, 31%, 1) 100%);
+    margin: 15px;
+    border-radius: 15px;
+    max-height: auto;
+    display: grid;
+    align-items: center;
+}
+
+.sushant-steve-heading {
+    text-align: center;
+}
+
+.sushant-steve-heading a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+.sushant-steve-heading a h1 {
+    text-align: center;
+    font-family: "SF-black" ;
+    font-size: 50px;
+    padding: 50px 40px 10px 40px;
+}
+
+@media only screen and (max-width:400px) {
+    .sushant-steve-heading a h1 {
+        font-size: 40px;
+    }
+}
+
+.sushant-steve-text {
+    text-align: center;
+}
+
+.sushant-steve-text a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+.sushant-steve-text a P {
+    text-align: center;
+    font-family: "SFPro-Regular" ;
+    font-size: 22px;
+    margin: 15px 30px;
+}
+
+.sushant-steve-anchor {
+    text-align: center;
+    padding: 20px;
+}
+
+.sushant-steve-anchor a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-size: 20px;
+    font-family: "SFPro-Regular" ;
+
+}
+
+.steve-anchor-span-text:hover {
+    text-decoration: underline;
+}
+
+.sushant-steve-img {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+.sushant-steve-img img {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #024e08;
+    transform: scale(100%);
+    transition: all .15s ease-in-out;
+}
+
+.sushant-steve-img img:hover {
+    transform: scale(99%);
+    box-shadow: 0px 0px 20px #024e08;
+    transition: all .17s ease-in-out;
+}
+
+@media only screen and (max-width:900px) {
+    .sushant-steve-img img {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,56 @@
+/* ====== FONTS ====== */
+
+@font-face {
+    font-family: "Bazooka" ;
+    src: url(../../font/Bazooka.woff);
+}
+
+@font-face {
+    font-family: "SF-black" ;
+    src: url(../../font/SF-Pro-Display-Black.woff);
+}
+
+@font-face {
+    font-family: "SF-bold" ;
+    src: url(../../font/SF-Pro-Display-Bold.woff);
+}
+
+@font-face {
+    font-family: "SF-heavy" ;
+    src: url(../../font/SF-Pro-Display-Heavy.woff);
+}
+
+@font-face {
+    font-family: "SF-medium" ;
+    src: url(../../font/SF-Pro-Display-Medium.woff);
+}
+
+@font-face {
+    font-family: "SFPro-Semibold" ;
+    src: url(../../font/SF-Pro-Display-Semibold.woff);
+}
+
+@font-face {
+    font-family: "SF-round-black" ;
+    src: url(../../font/SF-Pro-Rounded-Black.woff);
+}
+
+@font-face {
+    font-family: "SF-round-bold" ;
+    src: url(../../font/SF-Pro-Rounded-Bold.woff);
+}
+
+@font-face {
+    font-family: "SF-round-heavy" ;
+    src: url(../../font/SF-Pro-Rounded-Heavy.woff);
+}
+
+@font-face {
+    font-family: "SF-text-regular" ;
+    src: url(../../font/SF-Pro-Text-Regular.woff);
+}
+
+@font-face {
+    font-family: "SFPro-Regular" ;
+    src: url(../../font/SFProDisplay-Regular.ttf);
+}
