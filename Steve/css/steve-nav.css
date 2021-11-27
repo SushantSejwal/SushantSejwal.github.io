@@ -1,0 +1,226 @@
+
+
+/* ======================= For All ======================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "SFPro-Regular" ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ======================= Header ======================= */
+
+.hdr {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(43, 41, 41);
+    z-index: 9;
+    box-shadow: 0px 2px 10px black;
+}
+
+/* ======================= Nav Items ======================= */
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.all-other-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    margin: 7px 25px;
+}
+
+.main-item-a-svg {
+    max-width: 33px;
+    margin-top: 3px;
+    max-height: 30px;
+}
+
+.main-item-a-svg g.sushant_anshika{
+    fill: #ffffff;
+}
+
+.other-items a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "SFPro-Regular" ;
+}
+
+.other-items a:hover {
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+/* ======================= toggle button ======================= */
+
+.toggle-btn {
+    position: absolute;
+    left: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.toggle-btn-line {
+    background-color: white;
+    width: 100%;
+    height: 1px;
+}
+
+.toggle-btn-line-1 {
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn-line-2 {
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ======================= Animation ======================= */
+
+.toggle-btn-line-1.sushantsejwal {
+    transform: translateY(0.5px) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn-line-2.sushantsejwal {
+    transform: translateY(-0.5px) rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ======================= media query ======================= */
+
+@media only screen and (max-width:768px) {
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .all-other-items {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        transform: scale(1, 0);
+        transition: all 0.4s ease-in-out;
+        transform-origin: top;
+        position: fixed;
+        top: 40px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(43, 41, 41);
+        text-align: center;
+        overflow-y: scroll;
+    }
+
+    .all-other-items.sushantsejwal {
+        transform: scale(1, 1);
+    }
+
+    .other-items .link {
+        transform: translateY(70px);
+        display: block;
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin: 15px;
+        text-transform: capitalize;
+    }
+
+    /* link opacity */
+
+    .link_1 {
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+
+    }
+
+    .link_2 {
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    .link_3 {
+        opacity: 0;
+        transition: opacity 0.12s ease-in-out;
+    }
+
+    .link_4 {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    /* ====== */
+
+    .link_1.sushantsejwal {
+        opacity: 1;
+        transition: opacity 0.8s ease-in-out;
+        transition-delay: .1s;
+    }
+
+    .link_2.sushantsejwal {
+        opacity: 1;
+        transition: opacity 0.8s ease-in-out;
+        transition-delay: .18s;
+    }
+
+    .link_3.sushantsejwal {
+        opacity: 1;
+        transition: opacity 0.8s ease-in-out;
+        transition-delay: .24s;
+    }
+
+    .link_4.sushantsejwal {
+        opacity: 1;
+        transition: opacity 0.8s ease-in-out;
+        transition-delay: .28s;
+    }
+
+}
+
+/* ======================= Scroll Bar ======================= */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(43, 41, 41);
+    box-shadow: inset 0.1px 0.1px 10px rgb(92, 92, 92);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(214, 214, 214);;
+    box-shadow: inset 0.1px 0.1px 10px rgb(92, 92, 92);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(174, 174, 174);
+    box-shadow: inset 0.1px 0.1px 10px rgb(92, 92, 92);
+}

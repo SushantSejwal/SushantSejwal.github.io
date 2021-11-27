@@ -1,0 +1,324 @@
+body {
+    background-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    pointer-events: none;
+}
+
+h1,
+b,
+.jobs-quote q {
+    font-family: "SFPro-Semibold";
+}
+
+/* section */
+
+.steve-jobs-section {
+    max-width: 1920px;
+    margin: 50.5px auto 0px auto;
+}
+
+.steven-pol-jobs {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.steve-jobs-img {
+    text-align: center;
+    margin: 20px;
+}
+
+.steve-img {
+    text-align: center;
+    margin: 20px;
+}
+
+.steve-jobs-img img {
+    max-width: 75%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px rgb(32, 32, 32);
+}
+
+.steve-img img {
+    max-width: 70%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px rgb(32, 32, 32);
+}
+
+.steve-jobs-text-heading h1 {
+    font-family: "SF-bold" ;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.steve-jobs-text-para p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* video */
+
+.steve-jobs-video {
+    margin: 20px;
+    padding: 20px;
+}
+
+.steve-video {
+    padding: 10px;
+    text-align: center;
+}
+
+.steve-video video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgb(32, 32, 32);
+}
+
+.video-caption {
+    padding: 20px 10px;
+}
+
+.video-caption .caption {
+    padding: 10px 0px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* last words */
+
+.learning-from-last-words-of-steve-jobs h1 {
+    text-align: center;
+    font-family: "SFPro-Semibold";
+    padding: 5px 20px 20px 20px;
+    font-size: 3rem;
+}
+
+.jobs-last-words {
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 20px 0px 10px 0px;
+}
+
+.jobs-last-words .words {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 3px 0px;
+}
+
+.words {
+    font-size: 22px;
+}
+
+.steve-five-fact {
+    padding: 25px 5px;
+}
+
+.steve-five-fact-heading p {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px 0px;
+    font-family: "SFPro-Semibold";
+}
+
+.quote-by-jobs .jobs-quote q {
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 15px 0px;
+    font-family: "SFPro-Semibold";
+    text-align: center;
+    display: block;
+}
+
+.best-doctors-heading h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px 0px;
+    font-family: "SFPro-Semibold";
+}
+
+.list-for-best-doctors {
+    padding: 0px 10px 0px 20px;
+}
+
+.list-for-best-doctors ol li {
+    font-size: 20px;
+}
+
+/* hr */
+.container-for-hr {
+    text-align: center;
+}
+
+hr {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* hr end */
+
+/* quotes by Steve Jobs */
+
+.jobs-quotes {
+    padding: 20px;
+}
+
+.jobs-quotes-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 5px 10px 20px 10px;
+}
+
+.jobs-quote {
+    padding: 30px 10px;
+}
+
+.jobs-quote-para {
+    font-size: 29px;
+    padding: 5px 10px;
+}
+
+.jobs-quote-expanation {
+    font-size: 22px;
+    padding: 5px 10px;
+}
+
+/* =============================== Footer =============================== */
+
+.footer {
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-para {
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-para-text {
+    margin: 0px 25px;
+}
+
+/* link to apple */
+
+.link-tp-apple-svg {
+    width: 15px;
+    margin: 0px 25px;
+}
+
+.link-to-apple-svg-g {
+    fill: #dadada;
+}
+
+.link-to-apple-svg-g.apple_sushantanshika {
+    fill: #ffffff;
+}
+
+.footer-para-svg {
+    border-left: 1px solid rgb(230, 230, 230);
+}
+
+@media only screen and (max-width:432px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 20px;
+    }
+
+    .footer-para-text {
+        margin: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width:412px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 15px;
+    }
+
+    .footer-para-text {
+        margin: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width:392px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 10px;
+    }
+
+    .footer-para-text {
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width:372px) {
+
+    .link-tp-apple-svg {
+        margin: 0px 5px;
+        width: 14px;
+    }
+
+    .footer-para-text {
+        margin: 0px 5px;
+        font-size: 14px;
+    }
+
+}
+
+/* ==== bullet svg ==== */
+
+.bullet-svg {
+    width: 33px;
+    height: 30px;
+    max-width: 33px;
+    max-height: 30px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin: 7px 25px;
+}
+
+.bullet-audio-container{
+    opacity: 0;
+}
+
+@media only screen and (min-width:769px) {
+
+    .bullet-svg-g.sushant_bullet {
+        fill: #ffffff;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .bullet-svg-g.sushant_bullet_phone {
+        fill: #ffffff;
+    }
+
+    .bullet {
+        position: absolute;
+        right: 15px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bullet-svg {
+        margin: 3px 0px 0px 0px;
+    }
+
+}
